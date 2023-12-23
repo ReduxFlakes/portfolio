@@ -1,0 +1,44 @@
+{
+  "navbar": [
+    {
+      "title": "upfront",
+      "url": "/"
+    },
+    {
+      "title": "weblog",
+      "url": "/weblog"
+    },
+    {
+      "title": "bookmarks",
+      "url": "/bookmarks"
+    },
+    {
+      "title": "design",
+      "url": "/design"
+    },
+    {
+      "title": "projects",
+      "url": "/projects"
+    },
+    {
+      "title": "contributions",
+      "url": "/contributions"
+    },
+    {
+      "title": "visuals",
+      "url": "/visuals"
+    },
+    {
+      "title": "archive",
+      "url": "/archive"
+    },
+    {
+      "title": "webmaster",
+      "url": "/webmaster"
+    },
+    {
+      "title": "site",
+      "url": "/about"
+    }
+  ]
+}

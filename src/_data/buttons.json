@@ -1,0 +1,59 @@
+{
+  "friendButtons": [
+    {
+      "title": "OpenBooks",
+      "url": "https://openbooks.neocities.org",
+      "img": "openbooks.gif"
+    },
+    {
+      "title": "lime360",
+      "url": "https://lime360.neocities.org",
+      "img": "lime360.png"
+    },
+    {
+      "title": "RM94",
+      "url": "https://rm94.neocities.org",
+      "img": "rm94.gif"
+    },
+    {
+      "title": "Shishka",
+      "url": "https://shishka.neocities.org",
+      "img": "shishka-ulala.gif"
+    },
+    {
+      "title": "Neonriser",
+      "url": "https://neonriser.neocities.org/",
+      "img": "neonriser.png"
+    },
+    {
+      "title": "Dannarchy",
+      "url": "https://dannarchy.com/",
+      "img": "dannarchy.gif"
+    },
+    {
+      "title": ":/newlambda",
+      "url": "https://newlambda.neocities.org/",
+      "img": "newlambda.gif"
+    },
+    {
+      "title": "NeoCities Neighborhood Directory",
+      "url": "https://neo-neighborhoods.neocities.org/",
+      "img": "neobutton.gif"
+    },
+    {
+      "title": "DreamProject Legacy",
+      "url": "https://dreamproject98.com/",
+      "img": "dream_legacy.png"
+    },
+    {
+      "title": "concon.soy",
+      "url": "https://concon.soy/",
+      "img": "conconbutton.gif"
+    },
+    {
+      "title": "Epic",
+      "url": "https://epic1.neocities.org/",
+      "img": "epic1.gif"
+    }
+  ]
+}

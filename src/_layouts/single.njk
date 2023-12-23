@@ -1,0 +1,13 @@
+{% extends "./base.njk" %}
+
+{% block layout %}
+    <div class="site--frame">
+        {% block content %}
+            {{ content | safe }}
+        {% endblock %}
+        {% include "header.njk" %}
+        {% include "navbar.njk" %}
+        {% include "sidebar.njk" %}
+        {% include "footer.njk" %}
+    </div>
+{% endblock %}

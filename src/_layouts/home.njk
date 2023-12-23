@@ -1,0 +1,14 @@
+{% extends "./single.njk" %}
+
+{% block content %}
+    <main class="site--content home--main">
+        {% include "hero.njk" %}
+        <h1 id="{{ heading | slugify }}" class="page--title">{{ heading }}</h1>
+        <article id="main--content">
+            {{ content | safe }}
+        </article>
+    </main>
+    <style>
+.home--hero{display:grid;align-items:center;grid-template-columns:1.25fr 1fr;gap:var(--sp-xsm);padding:var(--sp);background:hsl(204, 70%, 20%);border-bottom:1px solid hsl(204, 50%, 40%)}.home--hero #introduction{text-align:center}.home--hero #introduction img{vertical-align:sub}#update--box{border-radius:3px;background:hsl(191, 60%, 30%);padding:var(--sp-xxsm) var(--sp-xsm);box-shadow:0 0 4px 0 rgba(0, 0, 0, 0.4)}#update--box *{margin:0}
+    </style>
+{% endblock %}

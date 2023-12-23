@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include "head.njk" %}
+    <body>
+        {% block layout %}
+            {{ content | safe }}
+        {% endblock %}
+        <script data-goatcounter="https://reduxflakes.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+    </body>
+</html>

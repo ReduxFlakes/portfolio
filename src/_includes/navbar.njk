@@ -1,0 +1,5 @@
+<nav class="navbar">
+    {% for navbar in nav.navbar %}
+        <a href="{{ navbar.url }}" {% if (navbar.url != "/" and page.url.startsWith(navbar.url)) or page.url == navbar.url %}aria-current="page"{% endif %}>{{ navbar.title }}</a> /
+    {% endfor %}
+</nav>
