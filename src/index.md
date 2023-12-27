@@ -12,6 +12,19 @@ Since this is somewhat a recreation of my mind, some stuff might me broken, outd
 
 Anyways, you can explore now, either go trough the sidebar or the links spread across the homepage, it's up to you really, bye and thanks for checking my place! :3
 
+## Latest post
+
+<ul>
+{% for post in collections.weblogPosts | reverse %}
+    {% if loop.index0 < 1 %}
+  <li>
+  <a href="{{ post.url }}">{{ post.data.title }}</a><br>
+  <time datetime="{{ post.data.date | dateToISOString }}" >{{ post.data.date | PostDate }}</time>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
 <a href="https://www.mabsland.com/Adoption.html"><img style="width:145px;margin:auto;" src="/static/images/web/censor_14b.gif" alt="Fa Teen: 14 Rating"></a>
 
 <div class="flex--wrap">
