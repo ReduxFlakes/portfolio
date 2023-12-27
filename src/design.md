@@ -14,6 +14,10 @@ In the past few years I've designed a lot of stuff, from logos, to websites. On 
 
 Made this button for the [DreamProject Legacy](https://dreamproject98.com/index.html) website, since the official one is not 88x31. The font used is Cutive Mono.
 
+<img src="/static/buttons/retrospace.png" alt="Retro Space Button">
+
+The new button that will be used on SurfScape for anything related to the Community (Retro Space). It was inspired by "The Network Neighborhood".
+
 <img src="/static/buttons/rf.png" alt="ReduxFlakes AIM Button">
 
 My own button! It's kinda random, I didn't want to just put my name on it, so I decided to add AIM Messenger logo because of it's connection with old tech.
