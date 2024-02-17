@@ -1,6 +1,6 @@
 ---
 title: Not Found
-layout: page.njk
+layout: base.njk
 permalink: /not_found.html
 ---
 

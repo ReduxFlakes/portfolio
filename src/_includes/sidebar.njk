@@ -1,72 +1,10 @@
-<aside class="site--sidebar">
-  <span class="site--sidebar__title">Website button</span>
-  <div class="sidebar--box">
-    <a class="link--btn" href="https://reduxflakes.neocities.org/">
-      <img style="width:88px;height:31px;image-rendering:pixelated;" src="/static/buttons/rf.png" alt="ReduxFlakes button">
-    </a>
-  </div>
-  <span class="site--sidebar__title">Webrings I'm in</span>
-  <div class="sidebar--box">
-    <div class="webring--grid">
-      <strong>HotLine Webring</strong>
-      <div class="webring">
-        <a href="https://hotlinewebring.club/reduxflakes/previous">Prev</a>
-        <a href="https://hotlinewebring.club/">Hotline</a>
-        <a href="https://hotlinewebring.club/reduxflakes/next">Next</a>
-      </div>
-      <strong>NeoSSg</strong>
-      <div id='neossg'>
-        <script type="text/javascript" src="https://neossg.neocities.org/onionring-variables.js"></script>
-        <script type="text/javascript" src="https://neossg.neocities.org/onionring-widget.js"></script>
-      </div>
-      <strong>Loop Ring</strong>
-      <div class="webring">
-        <a href="https://loop.graycot.dev/webring.html?action=prev"> &#8592;</a>
-        <a href="https://loop.graycot.dev/webring.html?action=home">Loop Ring</a>
-        <a href="https://loop.graycot.dev/webring.html?action=next"> &#8594; </a>
-      </div>
-      <strong>null webring</strong>
-      <div>
-        <script src="https://nuthead.neocities.org/ring/ring.js"></script>
-      </div>
-      <strong>Retronaut</strong>
-      <div class="webring">
-        <a href='https://webring.dinhe.net/prev/reduxflakes.neocities.org'>
-          &#8592; </a>
-        <a href='https://webring.dinhe.net'>Retronaut</a>
-        <a  href='https://webring.dinhe.net/next/reduxflakes.neocities.org'> &#8594; </a>
-      </div>
-    </div>
-  </div>
-  <span class="site--sidebar__title">Sites and Friends</span>
-  <div class="sidebar--box button--grid">
-    {% for friendButtons in buttons.friendButtons %}
-      <a class="link--btn" href="{{ friendButtons.url }}" target="_blank" rel="noreferrer" rel="noopener"><img src="/static/buttons/{{ friendButtons.img }}" alt="{{ friendButtons.title }} button"></a>
-    {% endfor %}
-  </div>
-  <span class="site--sidebar__title">Todo <sup>since 21/12/2023</sup>
-  </span>
-  <div class="sidebar--box">
-    <ul>
-      <del>
-        <li>Button list</li>
-      </del>
-      <li>Finish placeholder pages</li>
-      <li>/uses page</li>
-      <li>/now page</li>
-      <li>Gaming section</li>
-      <li>Shrines section</li>
-      <li>Music page</li>
-      <li>Remove unused assets</li>
-      <li>Optimize images</li>
-      <li>Create Software section</li>
-      <li>Create theme engine</li>
-    </ul>
-  </div>
-
+<aside class="site-sidebar pod">
+    <section class="site-sidebar-section">
+        <h3 class="site-sidebar-section__title">NAV</h3>
+        <nav class="nav-list">
+            {% for navbar in nav.navbar %}
+                <a class="nav-list_link" href="{{ navbar.url }}">{{ navbar.title }}</a>
+            {% endfor %}
+        </nav>
+    </section>
 </aside>
-<style>
-  .webring--grid {
-    text-align: center;
-  }
-</style>

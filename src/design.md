@@ -1,7 +1,7 @@
 ---
 title: Design
 description: Web design, logos, mockups, and more
-layout: page.njk
+layout: base.njk
 ---
 
 In the past few years I've designed a lot of stuff, from logos, to websites. On this page you can find some of that work, these include mostly buttons and simple website layouts for anyone, but it's focused on NeoCitizens. :3

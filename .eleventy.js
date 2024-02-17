@@ -24,8 +24,8 @@ module.exports = function (eleventyConfig) {
     return `<figure><img src="${image}" alt="${caption}"><figcaption>${caption}</figcaption></figure>`;
   });
   /* collections */
-  eleventyConfig.addCollection("weblogPosts", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/weblog/posts/*/**.md");
+  eleventyConfig.addCollection("posts", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/blog/posts/**/*.md");
   });
   /* time and date filters */
   eleventyConfig.addFilter("PostDate", function (date) {
@@ -45,7 +45,7 @@ module.exports = function (eleventyConfig) {
       layouts: "_layouts",
       data: "_data",
     },
-    templateFormats: ["md", "njk"],
+    templateFormats: ["md", "njk", "js"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",

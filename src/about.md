@@ -1,7 +1,7 @@
 ---
 title: About this website
 description: General information about this website
-layout: page.njk
+layout: base.njk
 ---
 
 The purpose of this page is to show a timeline of the construction of the site, how it's build, and respective credits for things I've used on it not built by me.
@@ -105,6 +105,7 @@ And we've reached the end! Yeah as you can see this website has quite some "hist
 - Framework (SSG) : [11ty/Elevety](https://www.11ty.dev/)
 - Stylesheet/Theme: Myself (Theme name: Blue Monday)
 - Inspiration:
+  - [Theory7](https://web.archive.org/web/20021003075313/http://www.theory7.com:80/splash1024.html)
   - [Daniele's Website](https://daniele63.neocities.org/)
   - [OpenBooks](https://openbooks.neocities.org/)
   - [sadgrl.online](https://sadgrl.online/)

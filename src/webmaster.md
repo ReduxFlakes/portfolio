@@ -1,7 +1,7 @@
 ---
 title: Webmaster
 description: About me? I think so
-layout: page.njk
+layout: base.njk
 ---
 
 Hi, my name is ReduxFlakes or reducc to close friends. I'm a computer scince student from Portugal with a pasion for old computers and vintage software (mostly from 1983 to 2007). I'm a _sucker_ for old web design especially from the 2000's with everything full of gloss, gradients, and icons.
