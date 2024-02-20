@@ -5,6 +5,7 @@ const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/static");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
   /* dev server config */
   eleventyConfig.setServerOptions({
     watch: ["src/css/", "src/*/*.md/"],
@@ -12,6 +13,7 @@ module.exports = function (eleventyConfig) {
   /* passtrough */
   eleventyConfig.addPassthroughCopy("src/static/");
   eleventyConfig.addPassthroughCopy("src/css/");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
   /* markdown config */
   const md = markdownIt({
     html: true,

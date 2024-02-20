@@ -1,3 +1,13 @@
-<header class="site-header pod">
-    <a href="/" class="site-header__link" title="Go to /"><img src="/static/images/branding/sky_banner.png" alt="Blue and orange sky with clouds with text saying 'ReduxFlakes' on top with 3D letters." class="site-header__image"></a>
+<header class="site-header">
+    {% if page.url != "/" %}
+        <a href="/">Go home...</a>
+        <h1>{{ title }}</h1>
+    {% else %}
+        <h1>{{ site.title}}</h1>
+    {% endif %}
 </header>
+<nav class="site-navbar">
+    {% for navbar in nav.navbar %}
+        <a class="navbar_link" href="{{ navbar.url }}">{{ navbar.title }}</a>
+    {% endfor %}
+</nav>
