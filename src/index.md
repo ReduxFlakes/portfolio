@@ -3,8 +3,15 @@ title: Home
 layout: base.njk
 ---
 
-## Welcome
+# Road closed
 
-Hi, I go by the name ReduxFlakes on the internet (or Reducc for close friends). I'm a web dev, amateur designer, and sometimes app developer.
+I'm still lost on how to redesign this website and so it's on an eternal limbo, please wait while I think hard on how to make this.
 
-I'm a lover for old tech (web, computers, software), and also a FOSS & privacy advocate.
+##
+
+Webrings
+
+<div id='neossg'>
+  <script type="text/javascript" src="https://neossg.neocities.org/onionring-variables.js"></script>
+  <script type="text/javascript" src="https://neossg.neocities.org/onionring-widget.js"></script>
+</div>

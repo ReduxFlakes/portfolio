@@ -21,14 +21,6 @@ module.exports = function (eleventyConfig) {
   md.use(markdownItAnc, {
     tabIndex: false,
   });
-  /* shortcodes */
-  eleventyConfig.addShortcode("figure", function (image, caption) {
-    return `<figure><img src="${image}" alt="${caption}"><figcaption>${caption}</figcaption></figure>`;
-  });
-  /* collections */
-  eleventyConfig.addCollection("posts", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/blog/posts/**/*.md");
-  });
   /* time and date filters */
   eleventyConfig.addFilter("PostDate", function (date) {
     return DateTime.fromJSDate(date).toFormat("dd LLL yyyy");

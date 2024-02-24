@@ -1,13 +1,10 @@
 <header class="site-header">
-    {% if page.url != "/" %}
-        <a href="/">Go home...</a>
-        <h1>{{ title }}</h1>
-    {% else %}
-        <h1>{{ site.title}}</h1>
-    {% endif %}
+    <a href="/">
+        <img src="/static/branding/header.png" alt="Banner saying 'ReduxFlakes' - 'Vintage tech, digital opsec, Android modding' with Linux mascot Xenia on the right side with a laptop. Art made by @rinidisc">
+    </a>
 </header>
 <nav class="site-navbar">
-    {% for navbar in nav.navbar %}
-        <a class="navbar_link" href="{{ navbar.url }}">{{ navbar.title }}</a>
-    {% endfor %}
+    {# {% for navbar in nav.navbar %}
+        <a class="navbar__link" href="{{ navbar.url }}">{{ navbar.title }}</a>
+    {% endfor %} #}
 </nav>
