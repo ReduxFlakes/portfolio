@@ -1,12 +1,24 @@
 {
   "navbar": [
     {
+      "title": "home",
+      "url": "/"
+    },
+    {
       "title": "blog",
       "url": "/blog"
     },
     {
-      "title": "bookmarks",
-      "url": "/bookmarks"
+      "title": "opinions",
+      "url": "/opinions"
+    },
+    {
+      "title": "links",
+      "url": "/links"
+    },
+    {
+      "title": "projects",
+      "url": "/projects"
     },
     {
       "title": "design",

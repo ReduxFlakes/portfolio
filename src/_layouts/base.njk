@@ -3,12 +3,11 @@
     {% include "head.njk" %}
     <body>
         {% include "header.njk" %}
-        <main class="main-content">
-            <article id="main">
-                {% block layout %}
-                    {{ content | safe }}
-                {% endblock %}
-            </article>
+        <main class="main-content {% if main_class %}{{main_class}}{% endif %}">
+
+            {% block layout %}
+                {{ content | safe }}
+            {% endblock %}
         </main>
         {% include "footer.njk" %}
         <script data-goatcounter="https://reduxflakes.goatcounter.com/count"

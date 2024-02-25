@@ -1,10 +1,9 @@
 <header class="site-header">
-    <a href="/">
-        <img src="/static/branding/header.png" alt="Banner saying 'ReduxFlakes' - 'Vintage tech, digital opsec, Android modding' with Linux mascot Xenia on the right side with a laptop. Art made by @rinidisc">
-    </a>
+    <h1>ReduxFlakes</h1>
+    <p class="enphase">android, opsec, open source, retro tech, music, design, piracy</p>
 </header>
 <nav class="site-navbar">
-    {# {% for navbar in nav.navbar %}
-        <a class="navbar__link" href="{{ navbar.url }}">{{ navbar.title }}</a>
-    {% endfor %} #}
+    {% for navbar in nav.navbar %}
+        <a class="navbar__link" {% if (navbar.url != "/" and page.url.startsWith(navbar.url)) or page.url == navbar.url %}aria-current="page"{% endif %} href="{{ navbar.url }}">{{ navbar.title }}</a>
+    {% endfor %}
 </nav>
