@@ -1,6 +1,5 @@
 {
   "name": "reduxflakes.neocities.org",
-  "version": "0.1",
   "main": "index.js",
   "scripts": {
     "start": "npx eleventy --serve",

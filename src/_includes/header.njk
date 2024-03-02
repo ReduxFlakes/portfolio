@@ -1,9 +1,9 @@
 <header class="site-header">
-    <h1>ReduxFlakes</h1>
-    <p class="enphase">android, opsec, open source, retro tech, music, design, piracy</p>
+    {% if page.url == "/" %}
+        <h1 class="site-header__title">{{site.title}}</h1>
+    {% else %}
+        <span class="site-header__title">
+            <a href="/">{{site.title}}</a>
+        </span>
+    {% endif %}
 </header>
-<nav class="site-navbar">
-    {% for navbar in nav.navbar %}
-        <a class="navbar__link" {% if (navbar.url != "/" and page.url.startsWith(navbar.url)) or page.url == navbar.url %}aria-current="page"{% endif %} href="{{ navbar.url }}">{{ navbar.title }}</a>
-    {% endfor %}
-</nav>

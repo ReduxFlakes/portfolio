@@ -4,108 +4,39 @@ layout: base.njk
 main_class: home-grid
 ---
 
-<aside class="sidebar fun-stuff">
-  <h3>Fidget Zone</h3>
-  <iframe
-    src="//incr.easrng.net/badge?key=reduxflakes"
-    style="background: url(//incr.easrng.net/bg.gif)"
-    title="increment badge"
-    width="88"
-    height="31"
-    frameborder="0"
-  ></iframe>
-  <h3>Sites I 💖</h3>
-  <nav style="display: flex; flex-wrap: wrap">
-    {% for friendButtons in buttons.friendButtons %}
-      <a href="{{ friendButtons.url }}"
-      ><img
-        src="/static/buttons/{{ friendButtons.img }}"
-        alt="{{ friendButtons.title }}"
-/></a>
-    {% endfor %}
-  </nav>
-</aside>
-<div class="center-content">
-  <article class="cute-pod">
-    <h2 id="about-me">About Me</h2>
-    <p>
+<article>
+  <h2 id="about-me">About Me</h2>
+  <p>
       Hey, welcome to my website, my name is ReduxFlakes, or reducc for close
       friends. I'm a developer, privacy, security, and open source advocate that
       loves <a href="/music">music</a> and retro tech.
     </p>
-  </article>
-  <article class="cute-pod">
-    <h2 id="in-construction">Website in construction</h2>
-    <p>
+  <h2 id="in-construction">Website in construction</h2>
+  <p>
       I've recently made this new website and so much of it's content is
       missing. Please wait unitl I get things tidy!
     </p>
-  </article>
-  <article class="cute-pod">
-    <h2 id="music">Favourite music <small>as of 25/02/2024</small>
-    </h2>
-    <p>
-      Leni - GoodBooks
-      <a href="https://redirect.invidious.io/hZ3ZL5P7Rog">External Link</a>
-    </p>
+  <h2 id="music">Favourite music <small>as of 02/03/2024</small>
+  </h2>
+  <p>
+      Heiko Voss - Follow Your Line
+      <a href="https://redirect.invidious.io/watch?v=PVzlYrRxA_c">External Link</a>
+  </p>
+  <div class="video-embed-wrapper">
     <iframe
-      width="530"
-      height="291.98"
-      src="https://invidio.us/embed/hZ3ZL5P7Rog?&amp;controls=0"
+      src="https://invidio.us/embed/PVzlYrRxA_c?"
+      class="video-embed"
       title="Invidious YT video player"
-      frameborder="0"
       allow="autoplay;encrypted-media;web-share"
       allowfullscreen
     ></iframe>
-  </article>
-</div>
-<aside class="sidebar unknown-stuff">
-  <h3>Webrings</h3>
-  <div id="neossg">
-    <script
-      type="text/javascript"
-      src="https://neossg.neocities.org/onionring-variables.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://neossg.neocities.org/onionring-widget.js"
-    ></script>
   </div>
-  <h3>Hotline</h3>
-  <div class="webring">
-    <a href="https://hotlinewebring.club/reduxflakes/previous">Prev</a>
-    <a href="https://hotlinewebring.club/">Hotline</a>
-    <a href="https://hotlinewebring.club/reduxflakes/next">Next</a>
-  </div>
-  <h3>Loop Ring</h3>
-  <div class="webring">
-    <a href="https://loop.graycot.dev/webring.html?action=prev"> &#8592;</a>
-    <a href="https://loop.graycot.dev/webring.html?action=home">Loop Ring</a>
-    <a href="https://loop.graycot.dev/webring.html?action=next"> &#8594; </a>
-  </div>
-  <h3>null</h3>
-  <div style="display: flex">
-    <script src="https://nuthead.neocities.org/ring/ring.js"></script>
-  </div>
-  <h3>Retronaut</h3>
-  <div class="webring">
-    <a href="https://webring.dinhe.net/prev/reduxflakes.neocities.org">
-      &#8592;
-    </a>
-    <a href="https://webring.dinhe.net">Retronaut</a>
-    <a href="https://webring.dinhe.net/next/reduxflakes.neocities.org">
-      &#8594;
-    </a>
-  </div>
-</aside>
-
-<style>
-  .home-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 11rem 1fr 11rem;
-  }
-  .center-content > * + * {
-    margin-top: 1rem;
-  }
-</style>
+  <h2 id="updates">Updates</h2>
+  <p>02-03-2024</p>
+  <ul>
+    <li>Fixed invidious player embed</li>
+    <li>Fixed some pages</li>
+    <li>Made new design and layout</li>
+    <li>Improved the sidebars and responsive typography</li>
+  </ul>
+</article>

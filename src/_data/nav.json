@@ -17,6 +17,10 @@
       "url": "/links"
     },
     {
+      "title": "music",
+      "url": "/music"
+    },
+    {
       "title": "projects",
       "url": "/projects"
     },

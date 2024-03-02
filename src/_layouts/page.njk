@@ -1,0 +1,17 @@
+{% extends "./base.njk" %}
+
+{% block layout %}
+    <article>
+        {% if title and description %}
+            <header class="page-header">
+                <h1>{{title}}</h1>
+                <p>{{description}} -  {% if update %}
+                        <em>Updated in: </em>
+                        <time datetime="{{ update | dateToISOString }}">{{ update | PostDate }}</time>
+                    {% endif %}
+                </p>
+            </header>
+        {% endif %}
+        {{ content | safe }}
+    </article>
+{% endblock %}
