@@ -4,11 +4,9 @@
     <body>
         {% include "header.njk" %}
         <main class="main-content">
-            {% include "aside.njk" %}
             {% block layout %}
                 {{ content | safe }}
             {% endblock %}
-            {% include "sidebar.njk" %}
         </main>
         {% include "footer.njk" %}
         <script data-goatcounter="https://reduxflakes.goatcounter.com/count"

@@ -7,3 +7,11 @@
         </span>
     {% endif %}
 </header>
+<nav class="navbar">
+    <ul class="navbar-list">
+        {% for navbar in nav.navbar %}
+            <li>/<a href="{{ navbar.url }}">{{ navbar.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

@@ -1,14 +1,13 @@
 ---
 title: Bookmarks
-description: List of any kind of websites I like and recommend!
-layout: base.njk
+layout: page.njk
+update: 2023-12-18T02:04:00
+description: Directory of sites that I found interesting while surfing the web.
 ---
-
-This page includes a list of sites that I have found while browsing the web that I've found interesting and recommend anyone checking them out!
 
 <dl>
 {% for bookmarks in bookmarks.bookmarks %}
-    <dt>{{ bookmarks.title }} - [<a href="{{ bookmarks.url }}">Access website</a>]</dt>
-    <dd>{{ bookmarks.description }}</dd>
+    <dt style="color:var(--clr-heading);"><strong>{{ bookmarks.title }}</strong> - [<a href="{{ bookmarks.url }}">Access website</a>]</dt>
+    <dd style="margin-bottom: 1rem;margin-left:1rem;">{{ bookmarks.description }}</dd>
 {% endfor %}
 </dl>

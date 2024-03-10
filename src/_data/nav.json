@@ -1,10 +1,6 @@
 {
   "navbar": [
     {
-      "title": "home",
-      "url": "/"
-    },
-    {
       "title": "blog",
       "url": "/blog"
     },
@@ -15,6 +11,10 @@
     {
       "title": "links",
       "url": "/links"
+    },
+    {
+      "title": "bookmarks",
+      "url": "/bookmarks"
     },
     {
       "title": "music",
