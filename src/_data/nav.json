@@ -1,36 +1,81 @@
 {
   "navbar": [
     {
-      "title": "blog",
-      "url": "/blog"
+      "category": "Get Started",
+      "links": [
+        {
+          "title": "home",
+          "link": "/"
+        },
+        {
+          "title": "about",
+          "link": "/about"
+        },
+        {
+          "title": "things i use",
+          "link": "/uses"
+        },
+        {
+          "title": "projects",
+          "link": "/projects"
+        }
+      ]
     },
     {
-      "title": "opinions",
-      "url": "/opinions"
+      "category": "Content",
+      "links": [
+        {
+          "title": "blog",
+          "link": "/blog"
+        },
+        {
+          "title": "opinions",
+          "link": "/opinions"
+        }
+      ]
     },
     {
-      "title": "links",
-      "url": "/links"
+      "category": "Surfing",
+      "links": [
+        {
+          "title": "links",
+          "link": "/links"
+        },
+        {
+          "title": "bookmarks",
+          "link": "/bookmarks"
+        }
+      ]
     },
     {
-      "title": "bookmarks",
-      "url": "/bookmarks"
+      "category": "Visuals",
+      "links": [
+        {
+          "title": "mockups",
+          "link": "/mockups"
+        },
+        {
+          "title": "music",
+          "link": "/music"
+        },
+        {
+          "title": "design",
+          "link": "/design"
+        }
+      ]
     },
     {
-      "title": "music",
-      "url": "/music"
-    },
-    {
-      "title": "projects",
-      "url": "/projects"
-    },
-    {
-      "title": "design",
-      "url": "/design"
-    },
-    {
-      "title": "about",
-      "url": "/about"
+      "category": "Shrines",
+      "links": [
+        {
+          "title": "Windows Vista",
+          "link": "/shrines/vista"
+        },
+        {
+          "title": "V-Rally",
+          "link": "/shrines/vrally"
+        }
+      ]
     }
   ]
 }

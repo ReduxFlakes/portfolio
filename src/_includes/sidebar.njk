@@ -1,0 +1,10 @@
+<aside class="site-sidebar">
+    {% for navbar in nav.navbar %}
+    <span class="navbar__title">{{ navbar.category }}</span>
+    <nav class="navbar">
+      {% for links in navbar.links %}
+        <a  class="navbar__link" href="{{ links.link }}">{{ links.title }}</a>
+      {% endfor %}
+    </nav>
+    {% endfor %}
+</aside>

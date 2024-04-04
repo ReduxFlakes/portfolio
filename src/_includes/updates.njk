@@ -1,0 +1,6 @@
+<ul class="updates-list">
+{%- for changes in updates.changes -%}
+    <li>{{changes.date}} - {{changes.description}}</li>
+{%- endfor -%}
+</ul>
+<span style="display:block;text-align:center;font-style:italic;">No more updates :(</span>

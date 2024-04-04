@@ -2,16 +2,6 @@
     {% if page.url == "/" %}
         <h1 class="site-header__title">{{site.title}}</h1>
     {% else %}
-        <span class="site-header__title">
-            <a href="/">{{site.title}}</a>
-        </span>
+            <a class="site-header__title" href="/">{{site.title}}</a>
     {% endif %}
 </header>
-<nav class="navbar">
-    <ul class="navbar-list">
-        {% for navbar in nav.navbar %}
-            <li>/<a href="{{ navbar.url }}">{{ navbar.title }}</a>
-            </li>
-        {% endfor %}
-    </ul>
-</nav>

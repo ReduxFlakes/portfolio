@@ -2,14 +2,22 @@
 <html lang="en">
     {% include "head.njk" %}
     <body>
-        {% include "header.njk" %}
-        <main class="main-content">
-            {% block layout %}
-                {{ content | safe }}
-            {% endblock %}
-        </main>
-        {% include "footer.njk" %}
+        <div class="site-wrapper">
+            {% include "header.njk" %}
+            {% include "sidebar.njk" %}
+            <main class="main-content">
+                {% block layout %}
+                    {{ content | safe }}
+                {% endblock %}
+            </main>
+            {% include "footer.njk" %}
+        </div>
         <script data-goatcounter="https://reduxflakes.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
     </body>
+    {% if style_slot %}
+        {% renderTemplate 'njk,md', slots %}
+            {{ style_slot | safe }}
+        {% endrenderTemplate %}
+    {% endif %}
 </html>
