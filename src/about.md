@@ -1,8 +1,8 @@
 ---
 title: About
 layout: page.njk
-update: 2023-03-10T01:55:00
+update: 2024-04-18T22:04:00
 description: About the webmaster.
 ---
 
-To be written...
+Coming Soon
