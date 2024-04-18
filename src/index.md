@@ -17,19 +17,17 @@ style_slot: true
 
 <article>
 
-![Under Construction](/static/images/under_construction.gif)
-
 ## Website in construction
 
-I've recently made this new website and so much of it's content is missing. Please wait unitl I get things tidy!
+I've recently revamped this website again and so much of it's content is missing. Please wait until I make things tidy!
 
-## Favourite music <small>as of 09/03/2024</small>
+## Favourite music <small>as of 18/04/2024</small>
 
-> Johan Lindell - Ghost Dancing ([External Link](https://redirect.invidious.io/watch?v=MH-PxeKrM7Q"))
+> Danzig - Long Way Back From Hell ([External Link](https://redirect.invidious.io/watch?v=PkoFImDpx_M"))
 
 <div class="video-embed-wrapper">
   <iframe
-      src="https://invidio.us/embed/MH-PxeKrM7Q"
+      src="https://invidio.us/embed/PkoFImDpx_M"
       class="video-embed"
       title="Invidious YT video player"
       allow="autoplay;encrypted-media;web-share"
@@ -44,22 +42,19 @@ I've recently made this new website and so much of it's content is missing. Plea
 .hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
+  border: 1px solid white;
   margin-bottom: 1em;
-  overflow: hidden;
 }
 
 .hero section {
   padding: 1rem;
 }
 .hero-intro {
-color: #7d46aa;
-background: #d3afe1;
+background: #1D267D;
 }
 .hero-updates {
-  color: #6a8b65;
-  background: #c8d4bf;
+  color: #afdba7;
+  background: #1E5128;
   max-height: 257.44px;
   overflow: auto;
 }
