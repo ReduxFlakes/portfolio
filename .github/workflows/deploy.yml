@@ -1,10 +1,11 @@
 name: Deploy to neocities
 
-# only run on changes to master
+# run on changes to main branch or when manually triggered
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 env:
   FORCE_COLOR: 2
