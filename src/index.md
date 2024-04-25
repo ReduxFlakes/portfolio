@@ -55,7 +55,7 @@ background: #1D267D;
 .hero-updates {
   color: #afdba7;
   background: #1E5128;
-  max-height: 257.44px;
+  max-height: 100%;
   overflow: auto;
 }
 
