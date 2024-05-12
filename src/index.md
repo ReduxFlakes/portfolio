@@ -1,73 +1,22 @@
 ---
 title: Home
 layout: base.njk
-style_slot: true
 ---
-
-<div class="hero">
-<section class="hero-intro">
-<h2>Introduction</h2>
-<p>Welcome to my website, my name is ReduxFlakes! In this site you can find all kinds of stuff, it's my archive of sorts, from games, blog posts, music tastes, and projects I've worked on. GO explore!!</p>
-</section>
-<section class="hero-updates">
-<h2>Updates</h2>
-{%- include "updates.njk" -%}
-</section>
-</div>
 
 <article>
 
-## Website in construction
+# an update
 
-I've recently revamped this website again and so much of it's content is missing. Please wait until I make things tidy!
+It's been a long time since I've actually worked on this site releasing content and showcasing the things I love, unfortunately time doesn't stop and it's really easy to waste it. I am happy that I have been improving my mental health and trying to improve myself though, that means focusing more on a single project than jumping from on to another as I've been doing for the past 2 years.
 
-## Favourite music <small>as of 18/04/2024</small>
+It will be hard but I already have a file on Obsidian with content ideas for this place.
 
-> Danzig - Long Way Back From Hell ([External Link](https://redirect.invidious.io/watch?v=PkoFImDpx_M"))
+About SurfScape, that has received some love on the past-past week but the new features I want to reveal are still half-way baked, the source code is also somewhat a mess but I'll try to figure out a way on how to keep it clean!
 
-<div class="video-embed-wrapper">
-  <iframe
-      src="https://invidio.us/embed/PkoFImDpx_M"
-      class="video-embed"
-      title="Invidious YT video player"
-      allow="autoplay;encrypted-media;web-share"
-      allowfullscreen
-    ></iframe>
-</div>
+If you've been wondering what I have been doing this year, well you can check [Mockupedia](mockupedia.miraheze.org/wiki/Main_Page) where I've been posting my latest mockups from an ATL of Microsoft called [CompuSoft](mockupedia.miraheze.org/wiki/CompuSoft) and another project of mine called [Aurora Systems International](mockupedia.miraheze.org/wiki/Aurora_Systems_International).
+
+This is all everyone, the navbar probably contains broken links but that will be fix... eventually...
+
+Well thanks for checking my site I guess, have a nice day!
+
 </article>
-
-{% slot 'style_slot' %}
-
-<style>
-.hero {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border: 1px solid white;
-  margin-bottom: 1em;
-}
-
-.hero section {
-  padding: 1rem;
-}
-.hero-intro {
-background: #1D267D;
-}
-.hero-updates {
-  color: #afdba7;
-  background: #1E5128;
-  max-height: 100%;
-  overflow: auto;
-}
-
-ul.updates-list {
-  display: block;
-  margin-top: 1em;
-  margin-left: 1.25rem;
-}
-.updates-list li::marker {
-  content: '➤ ';
-  font-size: 1em;
-}
-</style>
-
-{% endslot %}

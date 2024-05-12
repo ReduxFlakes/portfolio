@@ -1,6 +1,8 @@
 <header class="site-header">
-<a href="/">
-<img src="/static/images/banner.png" alt="ReduxFlakes pixel art 90's esque banner showing logos for 90's and 2000's operating systems.">
-</a>
-
+    <a class="site-header__title" href="/">ReduxFlakes</a>
+    <nav class="site-navbar">
+        {% for link in nav.navbar %}
+            <a  class="navbar__link" href="{{ link.url }}">{{ link.title }}</a>
+        {% endfor %}
+    </nav>
 </header>
