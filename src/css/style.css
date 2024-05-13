@@ -1,24 +1,13 @@
 *,
 *::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-p,
+*::after, 
 ul[class],
 ol[class],
-menu[class],
-figure,
-blockquote,
-dl,
-dd {
+menu[class] {
+  box-sizing: border-box;
   margin: 0;
 }
+
 ul[class],
 ol[class] {
   padding: 0;
@@ -30,7 +19,6 @@ nav * {
 html {
   scroll-behavior: smooth;
 }
-
 ul[class],
 ol[class] {
   list-style: none;
@@ -38,7 +26,6 @@ ol[class] {
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
-
 canvas,
 img,
 picture,
@@ -67,7 +54,8 @@ img:not([alt]) {
 }
 article > * + *,
 section > * + * {
-  margin-top: 1em;
+  margin-top: 0.75em;
+  line-height: 1.5;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -81,47 +69,85 @@ section > * + * {
 
 :root {
   font-size: 16px;
-  --background: #161616;
-  --onBackground: #f6f6f6;
-  --container: #1c1c1c;
-  --stroke: #242424;
-  --primary: #b6ff1b;
-  --font-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  --background: hsl(0, 0%, 8%);
+  --onBackground-surface: hsl(0, 0%, 75%);
+  --onBackground: hsl(0, 0%, 95%);
+  --container: hsl(0, 0%, 11%);
+  --stroke: hsl(0, 0%, 22%);
+  --primary: hsl(219, 95%, 72%);
+  --font-heading: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica", sans-serif;
+  --font-body: font-family: Charter, 'Bitstream Charter', Cambria, serif;;
+  --font-mono: font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;;
 }
 
 body {
-  font-family: var(--font-base);
-  font-size: clamp(0.9rem, 0.9rem + 0.390625vw, 1.15rem);
-  line-height: 1.5;
+  font-family: var(--font-body);
+  font-size: clamp(0.98rem, 0.98rem + 0.390625vw, 1.2rem);
   background: var(--background);
   color: var(--onBackground);
-  max-width: 50rem;
+  max-width: 47rem;
   margin: 0 auto;
+  letter-spacing: 0.01em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+font-family: var(--font-heading);
+line-height: 1.3em;
+letter-spacing: -0.03em;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+h3, h4 {
+  color: var(--primary);
+}
+
+h5, h6 {
+  color: var(--onBackground-surface);
+}
+
+
+pre, code {
+font-family: var(--font-mono);
 }
 
 a {
   color: var(--primary);
-}
-
-a:not(:hover) {
   text-decoration: underline;
 }
 
+a:hover {
+  opacity: 0.75;
+  text-decoration: none;
+  
+}
+
 .site-header {
-  padding: 0.5em;
+  padding: 0.5rem 0.75rem 0.75rem 0.75rem;
   border: 1px solid var(--stroke);
   background: var(--container);
+  font-family: var(--font-heading);
 }
 
 .site-header__title {
+  display: block;
+  text-align: center;
   font-size: 1.5em;
+}
+
+.site-navbar {
+  display: flex;
+  gap: 0.15em;
+  justify-content: space-between;
+  flex-wrap: wrap
 }
 
 .site-footer {
   border-top: 1px solid var(--stroke);
-  padding-top: 1em;
-  margin-top: 1em;
+  padding: 0.75em;
 }
 
 @media (min-width: 30rem) {

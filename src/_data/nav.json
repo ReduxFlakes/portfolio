@@ -1,31 +1,40 @@
 {
   "navbar": [
     {
-      "title": "blog",
+      "title": "Blog",
       "url": "/blog"
     },
     {
-      "title": "projects",
-      "url": "/projects"
-    },
-    {
-      "title": "opinions",
+      "title": "Opinions",
       "url": "/opinions"
     },
     {
-      "title": "links",
-      "url": "/links"
-    },
-    {
-      "title": "bookmarks",
-      "url": "/bookmarks"
-    },
-    {
-      "title": "design",
+      "title": "Design",
       "url": "/design"
     },
     {
-      "title": "about",
+      "title": "Projects",
+      "url": "/projects"
+    },
+    {
+      "title": "Resources",
+      "url": "/res"
+    },
+    {
+      "title": "Music",
+      "url": "/design"
+    },
+    {
+      "title": "Gear",
+      "url": "/gear"
+    },
+
+    {
+      "title": "The Archive",
+      "url": "/arch"
+    },
+    {
+      "title": "About",
       "url": "/about"
     }
   ]

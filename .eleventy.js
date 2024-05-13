@@ -1,4 +1,5 @@
 const markdownIt = require("markdown-it");
+const markdownItAttrs = require("markdown-it-attrs");
 const markdownItAnc = require("markdown-it-anchor");
 const rss = require("@11ty/eleventy-plugin-rss");
 const { DateTime } = require("luxon");
@@ -19,6 +20,7 @@ module.exports = function (eleventyConfig) {
   const md = markdownIt({
     html: true,
   });
+  md.use(markdownItAttrs);
   md.use(markdownItAnc, {
     tabIndex: false,
   });
