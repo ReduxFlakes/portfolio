@@ -1,4 +1,11 @@
 <footer class="site-footer">
+  <iframe
+      src="//incr.easrng.net/badge?key=reduxflakes"
+      style="background: url(//incr.easrng.net/bg.gif)"
+      title="increment badge"
+      width="88"
+      height="31"
+    ></iframe>
   <div class="site-footer-webrings">
     <div id="neossg">
       <script
@@ -18,9 +25,6 @@
       <a href="https://loop.graycot.dev/webring.html?action=home">Loop Ring</a>
       <a href="https://loop.graycot.dev/webring.html?action=next"> &#8594; </a>
     </div>
-    <div style="display: flex">
-      <script src="https://nuthead.neocities.org/ring/ring.js" async></script>
-    </div>
     <div class="webring">
       <a href="https://webring.dinhe.net/prev/reduxflakes.neocities.org">
       &#8592;
@@ -30,33 +34,17 @@
       &#8594;
     </a>
     </div>
+    <div style="display: flex">
+      <script src="https://nuthead.neocities.org/ring/ring.js" async></script>
+    </div>
   </div>
-  <div class="site-footer-widgets">
-    <iframe
-      src="//incr.easrng.net/badge?key=reduxflakes"
-      style="background: url(//incr.easrng.net/bg.gif)"
-      title="increment badge"
-      width="88"
-      height="31"
-    ></iframe>
-    <a
-      href="https://html5.validator.nu/?doc=https%3A%2F%2Freduxflakes.neocities.org%2F"
-    >
-      <img
-        style="border: 0; width: 88px; height: 31px"
-        src="/static/buttons/html5-validator-badge.svg"
-        alt="HTML5 Valid"
-        loading="lazy"
-/>
-    </a>
-    <a href="http://jigsaw.w3.org/css-validator/check/referer">
-      <img
-        style="border: 0; width: 88px; height: 31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="Valid CSS!"
-        loading="lazy"
-/>
-    </a>
-    <p class="site-footer-copy">&copy; 2024 ReduxFlakes - <a href="/privacy">Privacy Statement</a>
-    </p>
-  </footer>
+  <p style=display:flex;gap:0.25em;">
+    {% for social in socials.social %}
+      <a class="social--link" href="{{social.link}}" title="{{social.name}}">
+        <ion-icon class="social--link__icon" name="{{social.icon}}"></ion-icon>
+      </a>
+    {% endfor %}
+  </p>
+  <p class="site-footer-copy">&copy; 2024 ReduxFlakes - <a href="/privacy">Privacy Statement</a>
+  </p>
+</footer>

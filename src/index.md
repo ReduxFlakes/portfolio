@@ -1,22 +1,54 @@
 ---
 title: Home
 layout: base.njk
+style_slot: true
 ---
 
-# an update
+<section>
 
-<article>
+## Hey 👋,
 
-It's been a long time since I've actually worked on this site releasing content and showcasing the things I love, unfortunately time doesn't stop and it's really easy to waste it. I am happy that I have been improving my mental health and trying to improve myself though, that means focusing more on a single project than jumping from on to another as I've been doing for the past 2 years.
+my name is Redux (or reducc for close friends) and I'm a self-taught developer and designer from 🌍 Portugal, currently studying computer science.
 
-It will be hard but I already have a file on Obsidian with content ideas for this place.
+I'm known for creating the [SurfScape](/projects#surfscape) project, a web portal for Neocities about the open web, and learning about building websites.
 
-About SurfScape, that has received some love on the past-past week but the new features I want to reveal are still half-way baked, the source code is also somewhat a mess but I'll try to figure out a way on how to keep it clean!
+**TL:DR**: A privacy and security advocate with a passion of building minimal software related to the web. Or check my [about page](/about) for more information!
 
-If you've been wondering what I have been doing this year, well you can check [Mockupedia](mockupedia.miraheze.org/wiki/Main_Page) where I've been posting my latest mockups from an ATL of Microsoft called [CompuSoft](mockupedia.miraheze.org/wiki/CompuSoft) and another project of mine called [Aurora Systems International](mockupedia.miraheze.org/wiki/Aurora_Systems_International).
+### Latest posts
 
-This is all everyone, the navbar probably contains broken links but that will be fix... eventually...
+<div class="post-listing">
+{%- for post in collections.blog | reverse -%}
+<a class="post-listing__item" href="{{post.url}}">
+<h2>{{post.data.title}}</h2>
+<p>{{post.data.description}}</p>
+</a>
+{%- endfor -%}
+</div>
 
-Well thanks for checking my site I guess, have a nice day!
+<a href="/blog">Check the blog!</a>
 
-</article>
+### Friends from the interwebs :3 <small class="subtle">(contact me if you want to be added!)</small>
+
+<div style="display:flex;gap:0.25em;flex-wrap:wrap;">
+{%- for button in buttons.friendButtons -%}
+    <a class="btn-link" href="{{button.url}}" title="{{button.title}}">
+    <img src="/static/buttons/{{button.img}}" alt="{{button.title}}" width="88px" height="31px">
+    </a>
+{%- endfor -%}
+</div>
+
+</section>
+
+{% slot 'style_slot' %}
+
+<style>
+    .btn-link {
+        padding: 0.25em;
+image-rendering: pixelated;
+    }
+.btn-link:hover {
+    transform: scale(0.98);
+}
+</style>
+
+{% endslot %}

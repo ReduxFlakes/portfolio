@@ -1,0 +1,35 @@
+{
+  "social": [
+    {
+      "name": "Mastodon",
+      "icon": "logo-mastodon",
+      "link": "https://fosstodon.org/@redux"
+    },
+    {
+      "name": "GtiHub",
+      "icon": "logo-github",
+      "link": "https://github.com/ReduxFlakes"
+    },
+    {
+      "name": "YouTube",
+      "icon": "logo-youtube",
+      "link": "https://www.youtube.com/@reduxflakes"
+    },
+
+    {
+      "name": "Last.fm",
+      "icon": "radio",
+      "link": "https://www.last.fm/user/ReduxFlakes"
+    },
+    {
+      "name": "Dribbble",
+      "icon": "logo-dribbble",
+      "link": "https://dribbble.com/reduxflakes"
+    },
+    {
+      "name": "Feed",
+      "icon": "logo-rss",
+      "link": "feed.xml"
+    }
+  ]
+}

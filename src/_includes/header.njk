@@ -1,8 +1,13 @@
 <header class="site-header">
-    <a class="site-header__title" href="/">ReduxFlakes</a>
+    <a class="site-header__title" href="/" style="color:var(--onBackground);">
+    Redux
+<img src="/static/favicon.svg" alt="Propeller ReduxFlakes logo" style="width:48px;height:48px;">
+        Flakes
+    </a>
     <nav class="site-navbar">
         {% for link in nav.navbar %}
-            <a  class="navbar__link" href="{{ link.url }}">{{ link.title }}</a>
+            <a class="site-navbar-link" href="{{ link.url }}" style="color:{{link.color}}">
+                <ion-icon class="site-navbar-link__icon" name="{{link.icon}}"></ion-icon>{{ link.title }}</a>
         {% endfor %}
     </nav>
 </header>

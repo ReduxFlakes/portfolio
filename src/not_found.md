@@ -4,6 +4,6 @@ layout: base.njk
 permalink: /not_found.html
 ---
 
-Sorry but looks like this page was removed, never existed or the url was typed incorrectly.
+Sorry but it looks like this page was removed, never existed or the url was typed incorrectly. (or i'm probably procrastinating to create if :b)
 
 [< Go back home](/)

@@ -1,28 +1,20 @@
 ---
 title: Design
 layout: page.njk
-update: 2023-12-18T02:04:00
+update: 2024-05-17T00:07:00
 description: Web design, logos, mockups, and more.
 ---
 
-In the past few years I've designed a lot of stuff, from logos, to websites. On this page you can find some of that work, these include mostly buttons and simple website layouts for anyone, but it's focused on NeoCitizens. :3
+In the past few years I've designed a lot of stuff, from logos, to websites. On this page you can find some of that work, these include OSM (Operating System mockups), buttons, and logos for projects.
 
-## Buttons <small><sup>Mostly 88x31</sup></small>
+> Please note: when you want to use any of the content here, save them to your site instead of hotlinking, I don't want to break your website because of a silly change and I don't want you to affect my bandwidth. Also please credit if you use any of the content below (not needed for buttons)! Thank you! - Redux
 
-> Please, when you want to use any of the buttons, save them to your site instead of hotlinking, I don't want to break your website because of something breaking, thank you. - Redux
-
-<img src="/static/buttons/dream_legacy.png" alt="DreamProject Legacy Alternative">
-
-Made this button for the [DreamProject Legacy](https://dreamproject98.com/index.html) website, since the official one is not 88x31. The font used is Cutive Mono.
+## Buttons <small>Mostly 88x31</small>
 
 <img src="/static/buttons/retrospace.png" alt="Retro Space Button">
 
-The new button that will be used on SurfScape for anything related to the Community (Retro Space). It was inspired by "The Network Neighborhood".
+Button used on the [SurfScape Community](https://surfscape.neocities.org/community) page to share and link the Discord server.
 
-<img src="/static/buttons/rf.png" alt="ReduxFlakes AIM Button">
+<img src="/static/buttons/reduxflakes.gif" alt="ReduxFlakes Website Button">
 
-My own button! It's kinda random, I didn't want to just put my name on it, so I decided to add AIM Messenger logo because of it's connection with old tech.
-
-## Layouts
-
-> This section is empty because I haven't build any interesting layout, come and check later for any updates!
+My own website button! Inspired by the green color scheme, blurred website logo on the background pared with the iconic Helvetica font! Use it if you want to share my website.

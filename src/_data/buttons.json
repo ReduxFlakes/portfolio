@@ -1,29 +1,39 @@
 {
   "friendButtons": [
     {
-      "title": "OpenBooks",
-      "url": "https://openbooks.neocities.org",
-      "img": "openbooks.gif"
-    },
-    {
-      "title": "lime360",
-      "url": "https://lime360.neocities.org",
-      "img": "lime360.png"
-    },
-    {
-      "title": "RM94",
-      "url": "https://rm94.neocities.org",
-      "img": "rm94.gif"
-    },
-    {
-      "title": "Shishka",
-      "url": "https://shishka.neocities.org",
-      "img": "shishka-ulala.gif"
-    },
-    {
       "title": "Neonriser",
       "url": "https://neonriser.neocities.org/",
       "img": "neonriser.png"
+    },
+    {
+      "title": "Divsel",
+      "url": "https://divsel.neocities.org/",
+      "img": "divsel.svg"
+    },
+    {
+      "title": "Aristasian",
+      "url": "https://aristasia.guide/",
+      "img": "aristasiabutton.gif"
+    },
+    {
+      "title": "Lost Letters",
+      "url": "https://lostletters.neocities.org/",
+      "img": "lostletters.gif"
+    },
+    {
+      "title": "Coloured",
+      "url": "https://coloured.neocities.org",
+      "img": "coloured.png"
+    },
+    {
+      "title": "Erik Houdini",
+      "url": "https://erikhoudini.com/",
+      "img": "houdininokiabutton.gif"
+    },
+    {
+      "title": "OpenBooks",
+      "url": "https://openbooks.neocities.org",
+      "img": "openbooks.gif"
     },
     {
       "title": "Dannarchy",
@@ -31,14 +41,9 @@
       "img": "dannarchy.gif"
     },
     {
-      "title": ":/newlambda",
-      "url": "https://newlambda.neocities.org/",
-      "img": "newlambda.gif"
-    },
-    {
-      "title": "Neocities Neighborhood Directory",
-      "url": "https://neo-neighborhoods.neocities.org/",
-      "img": "neobutton.gif"
+      "title": "lime360",
+      "url": "https://lime360.neocities.org",
+      "img": "lime360.png"
     },
     {
       "title": "concon.soy",
@@ -46,9 +51,31 @@
       "img": "conconbutton.gif"
     },
     {
+      "title": "Neocities Neighborhood Directory",
+      "url": "https://neo-neighborhoods.neocities.org/",
+      "img": "neobutton.gif"
+    },
+    {
       "title": "Epic",
       "url": "https://epic1.neocities.org/",
       "img": "epic1.gif"
+    }
+  ],
+  "sitesILike": [
+    {
+      "title": "RM94",
+      "url": "https://rm94.neocities.org",
+      "img": "rm94.gif"
+    },
+    {
+      "title": ":/newlambda",
+      "url": "https://newlambda.neocities.org/",
+      "img": "newlambda.gif"
+    },
+    {
+      "title": "Shishka",
+      "url": "https://shishka.neocities.org",
+      "img": "shishka-ulala.gif"
     }
   ]
 }

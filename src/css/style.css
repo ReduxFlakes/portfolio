@@ -1,9 +1,6 @@
 *,
 *::before,
-*::after, 
-ul[class],
-ol[class],
-menu[class] {
+*::after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -19,10 +16,7 @@ nav * {
 html {
   scroll-behavior: smooth;
 }
-ul[class],
-ol[class] {
-  list-style: none;
-}
+
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
@@ -52,11 +46,6 @@ button {
 img:not([alt]) {
   filter: blur(10px);
 }
-article > * + *,
-section > * + * {
-  margin-top: 0.75em;
-  line-height: 1.5;
-}
 
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -69,93 +58,234 @@ section > * + * {
 
 :root {
   font-size: 16px;
-  --background: hsl(0, 0%, 8%);
-  --onBackground-surface: hsl(0, 0%, 75%);
-  --onBackground: hsl(0, 0%, 95%);
-  --container: hsl(0, 0%, 11%);
-  --stroke: hsl(0, 0%, 22%);
-  --primary: hsl(219, 95%, 72%);
-  --font-heading: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  --background: hsl(140, 6%, 10%); /* background */
+  --onBackground: hsl(139, 26%, 88%); /* text on the foreground */
+  --onBackground-surface: hsl(140, 6%, 64%); /* same as before but more muted */
+  --container: hsl(
+    140,
+    6%,
+    13%
+  ); /* cards, and other elemens that should be on top of the background */
+  --stroke: hsl(140, 6%, 22%); /* borders and stuff like that */
+  --primary: hsl(136, 98%, 75%); /* used on links and primary actions */
+  --secondary: #81f7fe; /* mostly used on smaller heading and in less used actions */
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica", sans-serif;
-  --font-body: font-family: Charter, 'Bitstream Charter', Cambria, serif;;
-  --font-mono: font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;;
+  --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+    "DejaVu Sans Mono", monospace;
 }
 
 body {
-  font-family: var(--font-body);
-  font-size: clamp(0.98rem, 0.98rem + 0.390625vw, 1.2rem);
+  font-family: var(--font-main);
+  font-size: clamp(0.98rem, 0.98rem + 0.390625vw, 1.125rem);
   background: var(--background);
   color: var(--onBackground);
   max-width: 47rem;
   margin: 0 auto;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.03em;
 }
 
-h1,h2,h3,h4,h5,h6 {
-font-family: var(--font-heading);
-line-height: 1.3em;
-letter-spacing: -0.03em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3em;
 }
 
 h4 {
   font-weight: normal;
 }
 
-h3, h4 {
-  color: var(--primary);
+h3,
+h4 {
+  padding-bottom: 0.15em;
+  border-bottom: 0.075em solid var(--stroke);
+  color: var(--secondary);
 }
 
-h5, h6 {
+h5,
+h6 {
   color: var(--onBackground-surface);
 }
 
-
-pre, code {
-font-family: var(--font-mono);
+pre,
+code {
+  font-family: var(--font-mono);
 }
 
 a {
   color: var(--primary);
   text-decoration: underline;
+  text-decoration-thickness: 0.1em;
+  text-decoration-color: var(--stroke);
+  transition: all 150ms ease-in-out;
 }
 
 a:hover {
-  opacity: 0.75;
-  text-decoration: none;
-  
+  text-decoration-color: var(--onBackground);
+}
+
+blockquote {
+  background: var(--container);
+  border-left: 0.25em solid var(--stroke);
+  padding: 0.5em;
+}
+
+small {
+  font-weight: normal;
 }
 
 .site-header {
-  padding: 0.5rem 0.75rem 0.75rem 0.75rem;
-  border: 1px solid var(--stroke);
-  background: var(--container);
+  text-align: center;
+  padding: 0.5em 0 0.5em 0;
   font-family: var(--font-heading);
 }
 
 .site-header__title {
-  display: block;
-  text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
+  font-weight: bold;
+  color: #91ceff;
+  background-image: -webkit-linear-gradient(
+    0deg,
+    #91ceff 0%,
+    #a587ff 25%,
+    #ff91f2 50%,
+    #ff80ac 75%,
+    #ffac47 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .site-navbar {
   display: flex;
-  gap: 0.15em;
-  justify-content: space-between;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.1em;
+  margin-top: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 0.1em solid var(--stroke);
+}
+
+.site-navbar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.5em 0.6em;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.site-navbar .site-navbar-link:hover {
+  color: var(--primary) !important;
+  text-decoration: 0.1em underline var(--primary);
+}
+
+.main-content {
+  padding-block: 1em;
+}
+
+article > * + *,
+section > * + * {
+  margin-top: 0.75em;
+  line-height: 1.5;
+}
+
+.post-listing {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.post-listing__item {
+  color: var(--font-body);
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  transition: all 150ms ease-in-out;
+}
+
+.post-listing__item:hover {
+  background: var(--stroke);
+  outline: 0.15em solid var(--primary);
 }
 
 .site-footer {
-  border-top: 1px solid var(--stroke);
+  border-top: 0.1em solid var(--stroke);
   padding: 0.75em;
 }
 
-@media (min-width: 30rem) {
+.banner {
+  width: 100%;
+  border-radius: 0.75em;
+}
+
+.page-header {
+  margin-bottom: 1em;
+}
+
+.page-header > * + * {
+  margin-top: 0.5em;
+}
+
+.cat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.cat-list-item__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background: var(--container);
+  border-radius: 0.5em;
+  padding: 0.5em;
+  text-decoration: none;
+  color: var(--onBackground);
+  transition: 150ms all ease-in-out;
+}
+
+.cat-list-item__meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-list-item a:hover {
+  color: var(--primary);
+  background: var(--stroke);
+  outline: 0.15em solid var(--primary);
+}
+
+.site-footer {
+  display: grid;
+  justify-items: center;
+}
+
+.display {
+  font-weight: lighter;
+}
+
+.subtitle {
+  font-size: 1.25em;
+}
+
+.subtle {
+  color: var(--onBackground-surface);
+}
+
+@media (min-width: 32rem) {
   body {
     padding: 1rem;
   }
+}
 
-  .site-header {
-    border-radius: 0.5em;
+@media (max-width: 32rem) {
+  .main-content {
+    padding: 1em;
   }
 }

@@ -1,0 +1,13 @@
+{% extends "./base.njk" %}
+
+{% block layout %}
+    {% if title %}
+        <header class="page-header">
+            <h1>{{title}}</h1>
+            <p>{{description}}</p>
+        </header>
+    {% endif %}
+    <article class="post-listing">
+        {{ content | safe }}
+    </article>
+{% endblock %}

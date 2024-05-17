@@ -40,11 +40,18 @@ module.exports = function (eleventyConfig) {
     return "";
   });
   /* time and date filters */
-  eleventyConfig.addFilter("PostDate", function (date) {
+  eleventyConfig.addFilter("postDate", function (date) {
     return DateTime.fromJSDate(date).toFormat("dd LLL yyyy");
   });
   eleventyConfig.addFilter("dateToISOString", function (date) {
     return new Date(date).toISOString();
+  });
+  /* collections */
+  eleventyConfig.addCollection("blog", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/blog/posts/**/*.md");
+  });
+  eleventyConfig.addCollection("opinions", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/opinions/posts/**/*.md");
   });
   /* plugins */
   eleventyConfig.setLibrary("md", md);

@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include "head.njk" %}
-    <body>
-        {% include "header.njk" %}
-        <main class="main-content">
-            {% block layout %}
-                {{ content | safe }}
-            {% endblock %}
-        </main>
-        {% include "footer.njk" %}
-        <script data-goatcounter="https://reduxflakes.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-    </body>
-    {% if style_slot %}
-        {% renderTemplate 'njk,md',
-        slots %}
-        {{ style_slot | safe }}
-        {% endrenderTemplate %}
-    {% endif %}
+  {% include "head.njk" %}
+  <body>
+    {% include "header.njk" %}
+    <main class="main-content">
+      {% block layout %}
+        {{ content | safe }}
+      {% endblock %}
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    {% include "footer.njk" %}
+    <script
+      data-goatcounter="https://reduxflakes.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+  </body>
+  <style>
+    .site-footer-webrings {
+      display: flex;
+      gap: 0.5em;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .social--link {
+      padding: 0.5em;
+    }
+    .social--link:hover {
+      color: var(--onBackground);
+    }
+    .social--link:hover .social--link__icon {
+      transform: rotate(360deg);
+    }
+    .social--link__icon {
+      font-size: 1.5em;
+      transition: all 300ms ease-out;
+    }
+  </style>
+  {% if style_slot %}
+    {% renderTemplate 'njk,md',
+    slots %}
+    {{style_slot | safe}}
+    {% endrenderTemplate %}
+  {% endif %}
 </html>

@@ -4,13 +4,20 @@
     {% if title and description %}
         <header class="page-header">
             <h1>{{title}}</h1>
-            <p>{{description}}</p>
+            <p class="subtitle">{{description}}</p>
             <p>
+                {% if date %}
+                    <em>Posted in: </em>
+                    <time datetime="{{ date | dateToISOString }}">{{ date | postDate }}</time>
+                {% endif %}
                 {% if update %}
                     <em>Updated in: </em>
-                    <time datetime="{{ update | dateToISOString }}">{{ update | PostDate }}</time>
+                    <time datetime="{{ update | dateToISOString }}">{{ update | postDate }}</time>
                 {% endif %}
             </p>
+            {% if banner %}
+                <img src="/static/images/{{banner}}.png" alt="{{title}} banner" class="banner">
+            {% endif %}
         </header>
     {% endif %}
     <article>
