@@ -15,11 +15,15 @@
       "icon": "logo-youtube",
       "link": "https://www.youtube.com/@reduxflakes"
     },
-
     {
       "name": "Last.fm",
       "icon": "radio",
       "link": "https://www.last.fm/user/ReduxFlakes"
+    },
+    {
+      "name": "Monkeytype",
+      "icon": "keypad",
+      "link": "https://monkeytype.com/profile/ReduxFlakes"
     },
     {
       "name": "Dribbble",
