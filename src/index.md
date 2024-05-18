@@ -27,7 +27,7 @@ I'm known for creating the [SurfScape](/projects#surfscape) project, a web porta
 
 <a href="/blog">Check the blog!</a>
 
-### Friends from the interwebs :3 <small class="subtle">(contact me if you want to be added!)</small>
+### Friends and sites I like :3 <small class="subtle">(contact me if you want to be added!)</small>
 
 <div style="display:flex;gap:0.25em;flex-wrap:wrap;">
 {%- for button in buttons.friendButtons -%}
@@ -36,6 +36,8 @@ I'm known for creating the [SurfScape](/projects#surfscape) project, a web porta
     </a>
 {%- endfor -%}
 </div>
+
+More in the <a href="/res/links">links</a> page ;)
 
 </section>
 
