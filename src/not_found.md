@@ -1,9 +1,8 @@
 ---
 title: Not Found
-layout: base.njk
+layout: page.njk
+description: Sorry but it looks like this page was removed, never existed or the url was typed incorrectly. (or i'm probably procrastinating to create this page :b)
 permalink: /not_found.html
 ---
-
-Sorry but it looks like this page was removed, never existed or the url was typed incorrectly. (or i'm probably procrastinating to create if :b)
 
 [< Go back home](/)

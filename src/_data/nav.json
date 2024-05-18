@@ -32,7 +32,7 @@
     },
     {
       "title": "Music",
-      "url": "/design",
+      "url": "/music",
       "icon": "musical-notes",
       "color": "#F3D0D7"
     },
@@ -43,7 +43,7 @@
       "color": "#F4CE14"
     },
     {
-      "title": "The Archive",
+      "title": "The Archives",
       "url": "/arc",
       "icon": "file-tray-full",
       "color": "#E4C59E"
