@@ -59,21 +59,49 @@ img:not([alt]) {
 
 :root {
   font-size: 16px;
-  --background: hsl(140, 6%, 10%); /* background */
-  --onBackground: hsl(139, 26%, 88%); /* text on the foreground */
-  --onBackground-surface: hsl(140, 6%, 64%); /* same as before but more muted */
+  --background: hsl(142, 98%, 97%); /* background */
+  --onBackground: hsl(139, 77%, 14%); /* text on the foreground */
+  --onBackground-surface: hsl(134, 8%, 34%); /* same as before but more muted */
   --container: hsl(
     140,
-    6%,
-    13%
+    35%,
+    90%
   ); /* cards, and other elemens that should be on top of the background */
-  --stroke: hsl(140, 6%, 22%); /* borders and stuff like that */
-  --primary: rgb(129, 254, 162); /* used on links and primary actions */
-  --secondary: #81f7fe; /* mostly used on smaller heading and in less used actions */
+  --stroke: hsl(139, 15%, 68%); /* borders and stuff like that */
+  --primary: hsl(136, 100%, 25%); /* used on links and primary actions */
+  --secondary: hsl(
+    183,
+    100%,
+    25%
+  ); /* mostly used on smaller heading and in less used actions */
   --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica", sans-serif;
   --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: hsl(140, 6%, 10%); /* background */
+    --onBackground: hsl(139, 26%, 88%); /* text on the foreground */
+    --onBackground-surface: hsl(
+      140,
+      6%,
+      64%
+    ); /* same as before but more muted */
+    --container: hsl(
+      140,
+      6%,
+      13%
+    ); /* cards, and other elemens that should be on top of the background */
+    --stroke: hsl(140, 10%, 25%); /* borders and stuff like that */
+    --primary: hsl(136, 100%, 75%); /* used on links and primary actions */
+    --secondary: hsl(
+      183,
+      100%,
+      75%
+    ); /* mostly used on smaller heading and in less used actions */
+  }
 }
 
 body {
@@ -151,19 +179,6 @@ hr {
 .site-header__title {
   font-size: 2em;
   font-weight: bold;
-  color: #91ceff;
-  background-image: -webkit-linear-gradient(
-    0deg,
-    #91ceff 0%,
-    #a587ff 25%,
-    #ff91f2 50%,
-    #ff80ac 75%,
-    #ffac47 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
 }
 
 .site-navbar {
@@ -186,7 +201,7 @@ hr {
 }
 
 .site-navbar .site-navbar-link:hover {
-  color: var(--primary) !important;
+  scale: 1.025;
   text-decoration: 0.1em underline var(--primary);
 }
 
@@ -219,7 +234,6 @@ section {
 }
 
 .post-listing__item:hover {
-  background: var(--stroke);
   outline: 0.15em solid var(--primary);
 }
 
@@ -265,9 +279,7 @@ section {
 }
 
 .cat-list-item a:hover {
-  color: var(--primary);
-  background: var(--stroke);
-  outline: 0.15em solid var(--primary);
+  outline: 0.15em dotted var(--primary);
 }
 
 .site-footer {

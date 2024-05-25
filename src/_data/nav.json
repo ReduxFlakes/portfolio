@@ -3,56 +3,47 @@
     {
       "title": "Blog",
       "url": "/blog",
-      "icon": "book",
-      "color": "#5AB2FF"
+      "icon": "book"
     },
     {
       "title": "Opinions",
       "url": "/opinions",
-      "icon": "mic",
-      "color": "#FFAA80"
+      "icon": "mic"
     },
     {
       "title": "Design",
       "url": "/design",
-      "icon": "brush",
-      "color": "#C1F2B0"
+      "icon": "brush"
     },
     {
       "title": "Projects",
       "url": "/projects",
-      "icon": "hammer",
-      "color": "#E5D4FF"
+      "icon": "hammer"
     },
     {
       "title": "Resources",
       "url": "/res",
-      "icon": "globe",
-      "color": "#A5F1E9"
+      "icon": "globe"
     },
     {
       "title": "Music",
       "url": "/music",
-      "icon": "musical-notes",
-      "color": "#F3D0D7"
+      "icon": "musical-notes"
     },
     {
       "title": "Gear",
       "url": "/gear",
-      "icon": "laptop",
-      "color": "#F4CE14"
+      "icon": "laptop"
     },
     {
       "title": "The Archives",
       "url": "/arc",
-      "icon": "file-tray-full",
-      "color": "#E4C59E"
+      "icon": "file-tray-full"
     },
     {
       "title": "About",
       "url": "/about",
-      "icon": "information",
-      "color": "#EEF7FF"
+      "icon": "information"
     }
   ]
 }
