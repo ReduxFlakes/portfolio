@@ -19,7 +19,7 @@ I'm known for creating the [SurfScape](/projects#surfscape) project, a web porta
 <div class="post-listing">
 {%- for post in collections.blog | reverse -%}
 <a class="post-listing__item" href="{{post.url}}">
-<h2>{{post.data.title}}</h2>
+<h2>{{post.data.title}}  - <small> <time datetime="{{ date }}">{{post.data.date | postDate }}</time></small></h2>
 <p>{{post.data.description}}</p>
 </a>
 {%- endfor -%}
@@ -49,6 +49,7 @@ More in the <a href="/res/links">links</a> page ;)
 image-rendering: pixelated;
     }
 .btn-link:hover {
+    outline: 2px dashed var(--primary);
     transform: scale(0.98);
 }
 </style>
