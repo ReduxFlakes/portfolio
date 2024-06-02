@@ -2,6 +2,7 @@
 title: Things I Use
 description: From hardware to software to every extension I use.
 layout: page.njk
+update: 2023-06-02T17:01:00
 ---
 
 ## Hardware
@@ -17,13 +18,16 @@ Came with Windows 10 Pro Edu when I got it back in 2022. Since at the end of 202
 
 ### Smartphone
 
-- Xiaomi 11 Lite 5G NE (long name I know);
+- Xiaomi 11 Lite 5G NE;
 - 128 GB/8 GB model;
 - Snapdragon 778G;
 - Currently with a 1 SIM, 1 SD Card (64 GB) setup;
 
-Came with MIUI 12 by default, since then I probably had more than 30 custom ROMs flashed onto it. Currently running HyperOS China Stable port, rooted and minimal debloated, also comes with AOSP installer instead of the horrendous Xiaomi one. I've also set a custom NextDNS profile for it to block trackers (mainly from Google and Xiaomi).
-My most used apps are on the [mobile software section](#android) if you want to know about it.
+Came with MIUI 12 by default, since then I probably had more than 30 custom ROMs flashed onto it. ~~Currently running HyperOS China Stable port, rooted and minimal debloated, also comes with AOSP installer instead of the horrendous Xiaomi one. I've also set a custom NextDNS profile for it to block trackers (mainly from Google and Xiaomi).~~
+
+I've now switched to Pixel OS and debloated some of the Google apps and services that I do not use.
+
+My most used apps are on the [mobile software](#android) section if you want to know about it.
 
 ## Software
 
@@ -46,7 +50,6 @@ My most used apps are on the [mobile software section](#android) if you want to 
   - Windows Terminal
   - Git and GitHub Cli
   - Docker Desktop
-  - WSL
 - Customization:
   - PowerToys
   - WinToys
@@ -62,7 +65,8 @@ My most used apps are on the [mobile software section](#android) if you want to 
   - App Manager (one of the best apps for a rooted android phone)
 - Poweramp (music player with support for Hi-Res)
 - Shazam
-- YouTube Revanced eXtended (normal revanced is really finicky to install and does not work on microG rooted devices without installing GMS)
+- YouTube (lazy to switch to modded YouTube)
+- NewPipe (And also LibreTube if NewPipe decided to stop working 😔)
 - ZArchiver (proper file manager)
 - AudioRelay (since the audio card on my laptop died 😔)
 - Magisk Modules
