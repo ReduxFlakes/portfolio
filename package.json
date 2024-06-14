@@ -3,7 +3,7 @@
   "main": "index.js",
   "scripts": {
     "start": "bunx eleventy --serve",
-    "build": "bunx eleventy",
+    "build": "bunx eleventy"
   },
   "keywords": [],
   "author": "ReduxFlakes",
