@@ -21,7 +21,6 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-canvas,
 img,
 picture,
 svg {
@@ -33,10 +32,9 @@ svg {
 iframe {
   border: 0;
 }
+
 input,
-button,
-textarea,
-select {
+button {
   font: inherit;
 }
 button {
@@ -59,67 +57,36 @@ img:not([alt]) {
 
 :root {
   font-size: 16px;
-  --background: hsl(142, 98%, 97%); /* background */
-  --onBackground: hsl(139, 77%, 14%); /* text on the foreground */
-  --onBackground-surface: hsl(134, 8%, 34%); /* same as before but more muted */
-  --container: hsl(
-    140,
-    35%,
-    90%
-  ); /* cards, and other elemens that should be on top of the background */
-  --stroke: hsl(139, 15%, 68%); /* borders and stuff like that */
-  --primary: hsl(136, 100%, 25%); /* used on links and primary actions */
+  --background: hsl(291, 81%, 6%); /* background */
+  --onBackground: hsl(291, 50%, 95%);
+  --stroke: hsl(291, 25%, 25%); /* borders and stuff like that */
+  --primary: hsl(291, 98%, 80%); /* used on links and primary actions */
   --secondary: hsl(
-    183,
-    100%,
-    25%
-  ); /* mostly used on smaller heading and in less used actions */
+    189,
+    85%,
+    75%
+  ); /* mostly used on smaller heading and in less used actions */ /* mostly used on smaller heading and in less used actions */
   --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica", sans-serif;
   --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: hsl(140, 6%, 10%); /* background */
-    --onBackground: hsl(139, 26%, 88%); /* text on the foreground */
-    --onBackground-surface: hsl(
-      140,
-      6%,
-      64%
-    ); /* same as before but more muted */
-    --container: hsl(
-      140,
-      6%,
-      13%
-    ); /* cards, and other elemens that should be on top of the background */
-    --stroke: hsl(140, 10%, 25%); /* borders and stuff like that */
-    --primary: hsl(136, 100%, 75%); /* used on links and primary actions */
-    --secondary: hsl(
-      183,
-      100%,
-      75%
-    ); /* mostly used on smaller heading and in less used actions */
-  }
+  color-scheme: dark;
 }
 
 body {
   font-family: var(--font-main);
-  font-size: clamp(0.9rem, 0.9rem + 0.390625vw, 1.15rem);
+  font-size: clamp(1rem, 1rem + 0.390625vw, 1.2rem);
   background: var(--background);
   color: var(--onBackground);
-  max-width: 74ch;
+  max-width: 72ch;
   margin: 0 auto;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   line-height: 1.3em;
 }
 
@@ -132,11 +99,6 @@ h4 {
   padding-bottom: 0.15em;
   border-bottom: 0.075em solid var(--stroke);
   color: var(--secondary);
-}
-
-h5,
-h6 {
-  color: var(--onBackground-surface);
 }
 
 pre,
@@ -195,13 +157,13 @@ hr {
   display: flex;
   align-items: center;
   gap: 0.4em;
-  padding: 0.5em 0.6em;
+  padding: 0 0.6em;
+  line-height: 2.25em;
   text-decoration: none;
-  transition: all 200ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .site-navbar .site-navbar-link:hover {
-  scale: 1.025;
   text-decoration: 0.1em underline var(--primary);
 }
 
@@ -216,7 +178,7 @@ section > * + * {
 
 article,
 section {
-  line-height: 1.5em;
+  line-height: 1.6em;
 }
 
 .post-listing {

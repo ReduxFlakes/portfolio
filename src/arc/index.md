@@ -1,7 +1,6 @@
 ---
 title: The Archives
 description: Library of old, abandoned, and lost projects.
-banner: thearc
 ---
 
 > "This place looks like it has been lost to time don't you think?"
@@ -10,7 +9,9 @@ banner: thearc
 
 ## Welcome to The Archives!
 
-You can think of this as a junkyard of old, abandoned, or even lost projects of mine. Anyone can explore and download the contents.
+You can think of this as a junkyard of old, abandoned, and even lost projects of mine. Feel free to explore! (but be careful)
+
+> This page is not complete!
 
 <ul class="cat-list">
 <li class="cat-list-item">

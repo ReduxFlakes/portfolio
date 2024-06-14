@@ -6,8 +6,7 @@
     </a>
     <nav class="site-navbar">
         {% for link in nav.navbar %}
-            <a class="site-navbar-link" href="{{ link.url }}" style="color:{{link.color}}">
-                <ion-icon class="site-navbar-link__icon" name="{{link.icon}}"></ion-icon>{{ link.title }}</a>
+            <a class="site-navbar-link" href="{{ link.url }}">{{ link.title }}</a>
         {% endfor %}
     </nav>
 </header>

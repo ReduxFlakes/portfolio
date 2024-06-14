@@ -41,7 +41,7 @@
   <p style=display:flex;gap:0.25em;">
     {% for social in socials.social %}
       <a class="social--link" href="{{social.link}}" title="{{social.name}}">
-        <ion-icon class="social--link__icon" name="{{social.icon}}"></ion-icon>
+        {{social.name}}
       </a>
     {% endfor %}
   </p>

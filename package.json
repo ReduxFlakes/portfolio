@@ -2,19 +2,19 @@
   "name": "reduxflakes.neocities.org",
   "main": "index.js",
   "scripts": {
-    "start": "npx eleventy --serve",
-    "build": "npx eleventy"
+    "start": "bunx eleventy --serve",
+    "build": "bunx eleventy"
   },
   "keywords": [],
   "author": "ReduxFlakes",
   "license": "GPL-2.0-only",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "luxon": "^3.4.3",
-    "markdown-it": "^13.0.2",
-    "markdown-it-anchor": "^8.6.7",
-    "markdown-it-attrs": "^4.1.6",
-    "nunjucks-markdown": "^2.0.1"
+    "@11ty/eleventy": "2.0.1",
+    "@11ty/eleventy-plugin-rss": "2.0.0",
+    "luxon": "3.4.3",
+    "markdown-it": "14.1.0",
+    "markdown-it-anchor": "9.0.1",
+    "markdown-it-attrs": "4.1.6",
+    "nunjucks-markdown": "2.0.1"
   }
 }

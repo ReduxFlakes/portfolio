@@ -21,5 +21,31 @@
     <link rel="shortcut icon" href="/static/favicon.svg" type="image/x-icon">
     <meta name="generator" content="{{ eleventy.generator }}"/>
     <link rel="stylesheet" href="/css/style.css">
-
+    <style>
+        .site-footer-webrings {
+            display: flex;
+            gap: 0.5em;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .social--link {
+            padding: 0.5em;
+        }
+        .social--link:hover {
+            color: var(--onBackground);
+        }
+        .social--link:hover .social--link__icon {
+            transform: rotate(360deg);
+        }
+        .social--link__icon {
+            font-size: 1.5em;
+            transition: all 300ms ease-out;
+        }
+    </style>
+    {% if style_slot %}
+        {% renderTemplate 'njk,md',
+        slots %}
+        {{style_slot | safe}}
+        {% endrenderTemplate %}
+    {% endif %}
 </head>

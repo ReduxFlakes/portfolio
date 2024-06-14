@@ -1,47 +1,42 @@
 {
   "navbar": [
     {
-      "title": "Blog",
+      "title": "📝 Blog",
       "url": "/blog",
       "icon": "book"
     },
     {
-      "title": "Opinions",
+      "title": "🎙️ Opinions",
       "url": "/opinions",
       "icon": "mic"
     },
     {
-      "title": "Design",
+      "title": "🎨 Design",
       "url": "/design",
       "icon": "brush"
     },
     {
-      "title": "Projects",
+      "title": "💾 Projects",
       "url": "/projects",
       "icon": "hammer"
     },
     {
-      "title": "Resources",
-      "url": "/res",
-      "icon": "globe"
-    },
-    {
-      "title": "Music",
+      "title": "🎵 Music",
       "url": "/music",
       "icon": "musical-notes"
     },
     {
-      "title": "Gear",
+      "title": "⚙️ Gear",
       "url": "/gear",
       "icon": "laptop"
     },
     {
-      "title": "The Archives",
+      "title": "📀 The Archives",
       "url": "/arc",
       "icon": "file-tray-full"
     },
     {
-      "title": "About",
+      "title": "🤗 About",
       "url": "/about",
       "icon": "information"
     }

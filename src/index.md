@@ -14,6 +14,8 @@ I'm known for creating the [SurfScape](/projects#surfscape) project, a web porta
 
 **TL:DR**: A privacy and security advocate with a passion of building minimal software related to the web. Or check my [about page](/about) for more information!
 
+> **14/06/2024 Update**: Removed a lot of the clutter in the code (including the light theme 💀). The site loads 2x faster now and looks much nicer with the purple/rose theme imo. (also updated the logo to my new branding 😊)
+
 ### Latest posts
 
 <div class="post-listing">
@@ -32,12 +34,12 @@ I'm known for creating the [SurfScape](/projects#surfscape) project, a web porta
 <div style="display:flex;gap:0.25em;flex-wrap:wrap;">
 {%- for button in buttons.friendButtons -%}
     <a class="btn-link" href="{{button.url}}" title="{{button.title}}">
-    <img src="/static/buttons/{{button.img}}" alt="{{button.title}}" width="88px" height="31px">
+    <img src="/static/buttons/{{button.img}}" alt="{{button.title}}" width="88" height="31">
     </a>
 {%- endfor -%}
 </div>
 
-More in the <a href="/res/links">links</a> page ;)
+More in the <a href="/bookmarks">bookmarks</a> page ;)
 
 </section>
 

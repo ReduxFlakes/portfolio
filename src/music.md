@@ -1,7 +1,7 @@
 ---
 title: Music
 layout: page.njk
-description: See the music I am listening, my library, and my all-time favourites!
+description: See the music I am listening to
 ---
 
 ## Last.fm history
