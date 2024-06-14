@@ -9,7 +9,6 @@ on:
 
 env:
   FORCE_COLOR: 2
-  node_version: 20
 
 concurrency: # prevent concurrent deploys doing strange things
   group: deploy-to-neocities
@@ -18,15 +17,12 @@ concurrency: # prevent concurrent deploys doing strange things
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ env.node_version }}
-      - run: npm i --save-dev
-      - run: npm run build:deploy
+      - name: Use Bun
+        uses: oven-sh/setup-bun@v1
+      - run: bun i --save-dev
+      - run: bun run build
       - name: Archive build artifacts
         uses: actions/upload-artifact@v4
         with:
