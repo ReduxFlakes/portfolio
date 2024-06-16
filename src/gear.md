@@ -2,7 +2,7 @@
 title: Things I Use
 description: From hardware to software to every extension I use.
 layout: page.njk
-update: 2023-06-02T17:01:00
+update: 2024-06-16T02:34:00
 ---
 
 ## Hardware
@@ -25,7 +25,9 @@ Came with Windows 10 Pro Edu when I got it back in 2022. Since at the end of 202
 
 Came with MIUI 12 by default, since then I probably had more than 30 custom ROMs flashed onto it. ~~Currently running HyperOS China Stable port, rooted and minimal debloated, also comes with AOSP installer instead of the horrendous Xiaomi one. I've also set a custom NextDNS profile for it to block trackers (mainly from Google and Xiaomi).~~
 
-I've now switched to Pixel OS and debloated some of the Google apps and services that I do not use.
+~~I've now switched to Pixel OS and debloated some of the Google apps and services that I do not use.~~
+
+[I've switched AGAIN!](blog/posts/2024/going-back-to-lineageos/)
 
 My most used apps are on the [mobile software](#android) section if you want to know about it.
 
@@ -33,10 +35,11 @@ My most used apps are on the [mobile software](#android) section if you want to 
 
 ### Windows
 
-- Browsers: Firefox (main), Vivaldi (main before May of 2024), Arc (school only)
+- Browsers: Firefox (main), ~~Vivaldi (main before May of 2024), Arc (school only)~~ (I now only use Firefox and Ungoogled Chromium for School)
   **Extensions:**
 - Bitwarden
 - uBlock Origin
+- Decentraleyes
 - Sidebery for tabs on the side (similar to Vivaldi and Arc but better 👌)
 - Unhook
 - SponsorBlock
@@ -44,30 +47,24 @@ My most used apps are on the [mobile software](#android) section if you want to 
 
 ---
 
-- Code Editor(s) & IDE(s): Visual Studio Code
+- Code Editor(s) & IDE(s): Visual Studio Code, Android Studio, IDEA IntelliJ
 - Other coding stuff:
+  - [Bun](https://bun.sh/) (I love it!)
   - Python
   - Windows Terminal
   - Git and GitHub Cli
-  - Docker Desktop
 - Customization:
   - PowerToys
   - WinToys
-  - AltSnap
-- Office 365
-- paint.net (but my main design tool is Figma)
+  - WinUtil
 
 ### Android
 
-- Browser: Brave (I had Firefox before but unfortunately is not as fast)
+- Browser: Fennec (F-Droid)
 - System utilities:
-  - Battery Guru (to check battery health and stats)
   - App Manager (one of the best apps for a rooted android phone)
 - Poweramp (music player with support for Hi-Res)
-- Shazam
-- YouTube (lazy to switch to modded YouTube)
-- NewPipe (And also LibreTube if NewPipe decided to stop working 😔)
-- ZArchiver (proper file manager)
+- ~~YouTube (lazy to switch to modded YouTube)~~ Full time NewPipe!
 - AudioRelay (since the audio card on my laptop died 😔)
 - Magisk Modules
   - Viper4Android (transforms a nugget earphone into a _beast_)
