@@ -27,7 +27,7 @@ Came with MIUI 12 by default, since then I probably had more than 30 custom ROMs
 
 ~~I've now switched to Pixel OS and debloated some of the Google apps and services that I do not use.~~
 
-[I've switched AGAIN!](blog/posts/2024/going-back-to-lineageos/)
+[I've switched AGAIN!](/blog/posts/2024/going-back-to-lineageos/)
 
 My most used apps are on the [mobile software](#android) section if you want to know about it.
 
