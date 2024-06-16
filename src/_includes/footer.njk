@@ -38,7 +38,7 @@
       <script src="https://nuthead.neocities.org/ring/ring.js" async></script>
     </div>
   </div>
-  <p style=display:flex;gap:0.25em;">
+  <p style=display:flex;flex-wrap:wrap;justify-content:center;gap:0.25em;">
     {% for social in socials.social %}
       <a class="social--link" href="{{social.link}}" title="{{social.name}}">
         {{social.name}}
