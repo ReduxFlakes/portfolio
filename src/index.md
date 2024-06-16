@@ -14,7 +14,7 @@ I'm known for creating the [SurfScape](/projects#surfscape) project, a web porta
 
 **TL:DR**: A privacy and security advocate with a passion of building minimal software related to the web. Or check my [about page](/about) for more information!
 
-> **14/06/2024 Update**: Removed a lot of the clutter in the code (including the light theme 💀). The site loads 2x faster now and looks much nicer with the purple/rose theme imo. (also updated the logo to my new branding 😊)
+> **16/06/2024 Update**: The website is almost _finished_! New: [about](/about) and [projects](/projects) pages. (also some updates on [gear](/gear).
 
 ### Latest posts
 
