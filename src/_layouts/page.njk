@@ -1,26 +1,11 @@
 {% extends "./base.njk" %}
 
+{% set page_modifier = "container" %}
+
 {% block layout %}
-    {% if title and description %}
-        <header class="page-header">
-            <h1>{{title}}</h1>
-            <p class="subtitle">{{description}}</p>
-            <p>
-                {% if date %}
-                    <em>Posted in: </em>
-                    <time datetime="{{ date | dateToISOString }}">{{ date | postDate }}</time>
-                {% endif %}
-                {% if update %}
-                    <em>Updated in: </em>
-                    <time datetime="{{ update | dateToISOString }}">{{ update | postDate }}</time>
-                {% endif %}
-            </p>
-            {% if banner %}
-                <img src="/static/images/{{banner}}.png" alt="{{title}} banner" class="banner">
-            {% endif %}
-        </header>
-    {% endif %}
-    <article>
-        {{ content | safe }}
-    </article>
+   {% include "header.njk" %}
+   <main {% if content_modifier %}class="{{content_classes}}"{% endif %}>
+      {{ content | safe }}
+  </main>
+   {% include "footer.njk" %}
 {% endblock %}

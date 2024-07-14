@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head.njk" %}
+  <body {% if body_classes %}
+    class="{{body_classes}}"
+  {% endif %}>
+    {% block layout %}
+        {{ content | safe }}
+    {% endblock %}
+  </body>
+</html>

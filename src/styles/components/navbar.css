@@ -1,0 +1,47 @@
+.sky-complex-navbar {
+    display: flex;
+    gap: var(--sp-m);
+    position: relative;
+    z-index: 20;
+}
+
+.sky-complex-navbar .navbar-menu .navbar-button {
+    display: flex;
+    gap: var(--sp-xs);
+    cursor: pointer;
+    list-style: none;
+    padding: var(--sp-xxs)  var(--sp-m);
+}
+
+.sky-complex-navbar .navbar-menu .navbar-button:hover {
+    background: var(--secondary);
+}
+
+.navbar-menu[open] .menu-content{
+    position: absolute;
+    top: 1.75rem;
+    background: var(--primary);
+    outline: 1px solid var(--on-primary-variant);
+    padding: var(--spr-xxs);
+}
+
+.navbar-menu[open] .menu-content small {
+    border-bottom: 1px solid var(--on-primary);
+    padding-block-end: var(--spr-xs);
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: column;
+    padding-block-start: var(--sp-xs);
+}
+
+.menu-nav__link {
+    display: flex;
+    padding: var(--spr-xxs);
+    gap: var(--spr-xs);
+}
+
+.menu-nav__link:hover {
+    background: var(--secondary);
+}

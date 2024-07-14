@@ -1,20 +1,26 @@
 {
   "name": "reduxflakes.neocities.org",
-  "main": "index.js",
-  "scripts": {
-    "start": "bunx eleventy --serve",
-    "build": "bunx eleventy"
-  },
-  "keywords": [],
+  "version": "0.0.1-hl3",
+  "description": "Source code for my website.",
   "author": "ReduxFlakes",
   "license": "GPL-2.0-only",
-  "devDependencies": {
-    "@11ty/eleventy": "2.0.1",
-    "@11ty/eleventy-plugin-rss": "~1.2.0",
+  "type": "module",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@11ty/eleventy": "3.0.0-alpha.13",
+    "@11ty/eleventy-img": "4.0.2",
+    "@11ty/eleventy-plugin-rss": "2.0.1",
+    "html-minifier-terser": "^7.2.0",
     "luxon": "^3.4.4",
     "markdown-it": "14.1.0",
     "markdown-it-anchor": "^9.0.1",
-    "markdown-it-attrs": "^4.1.6",
-    "nunjucks-markdown": "2.0.1"
+    "postcss": "^8.4.38",
+    "postcss-csso": "^6.0.1",
+    "postcss-import": "^16.1.0",
+    "timidity": "^1.3.0"
   }
 }

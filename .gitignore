@@ -1,3 +1,6 @@
 node_modules/
-_dist/
-.vscode
+_site/
+
+.env
+bun.lockb
+package-lock.json

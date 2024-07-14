@@ -1,0 +1,13 @@
+.sky-brand-header {
+    padding-block-start: var(--sp-s);
+    background: var(--primary);
+}
+
+.sky-brand-header * {
+    color: var(--on-primary-variant);
+}
+
+.brand-header-top {
+    display: flex;
+    justify-content: space-between;
+}

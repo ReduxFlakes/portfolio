@@ -1,44 +1,149 @@
 {
   "navbar": [
     {
-      "title": "📝 Blog",
-      "url": "/blog",
-      "icon": "book"
+      "title": "surface",
+      "icon": "ocean",
+      "menu": [
+        {
+          "description": "Pages related to the website or me :3",
+          "links": [
+            {
+              "title": "portal",
+              "url": "/portal",
+              "context": "as normal people call it, home",
+              "icon": "portal"
+            },
+            {
+              "title": "colophon",
+              "url": "/colophon",
+              "context": "stuff i used to create this website and also my inspiration to do so",
+              "icon": "cube"
+            },
+            {
+              "title": "about",
+              "url": "/about",
+              "context": "as normal people call it, home",
+              "icon": "about-me"
+            }
+          ]
+        }
+      ]
     },
     {
-      "title": "🎙️ Opinions",
-      "url": "/opinions",
-      "icon": "mic"
+      "title": "writing",
+      "icon": "mic",
+      "menu": [
+        {
+          "description": "Pages related to the website or me :3",
+          "links": [
+            {
+              "title": "portal",
+              "url": "/portal",
+              "context": "as normal people call it, home",
+              "icon": "portal"
+            },
+            {
+              "title": "colophon",
+              "url": "/colophon",
+              "context": "stuff i used to create this website and also my inspiration to do so",
+              "icon": "cube"
+            },
+            {
+              "title": "about",
+              "url": "/about",
+              "context": "as normal people call it, home",
+              "icon": "about-me"
+            }
+          ]
+        }
+      ]
     },
     {
-      "title": "🎨 Design",
-      "url": "/design",
-      "icon": "brush"
+      "title": "design",
+      "icon": "brush",
+      "menu": [
+        {
+          "description": "Pages related to the website or me :3",
+          "links": [
+            {
+              "title": "portal",
+              "url": "/portal",
+              "context": "as normal people call it, home",
+              "icon": "portal"
+            },
+            {
+              "title": "colophon",
+              "url": "/colophon",
+              "context": "stuff i used to create this website and also my inspiration to do so",
+              "icon": "cube"
+            },
+            {
+              "title": "about",
+              "url": "/about",
+              "context": "as normal people call it, home",
+              "icon": "about-me"
+            }
+          ]
+        }
+      ]
     },
     {
-      "title": "💾 Projects",
-      "url": "/projects",
-      "icon": "hammer"
+      "title": "projects",
+      "icon": "hammer",
+      "menu": [
+        {
+          "description": "Pages related to the website or me :3",
+          "links": [
+            {
+              "title": "portal",
+              "url": "/portal",
+              "context": "as normal people call it, home",
+              "icon": "portal"
+            },
+            {
+              "title": "colophon",
+              "url": "/colophon",
+              "context": "stuff i used to create this website and also my inspiration to do so",
+              "icon": "cube"
+            },
+            {
+              "title": "about",
+              "url": "/about",
+              "context": "as normal people call it, home",
+              "icon": "about-me"
+            }
+          ]
+        }
+      ]
     },
     {
-      "title": "🎵 Music",
-      "url": "/music",
-      "icon": "musical-notes"
-    },
-    {
-      "title": "⚙️ Gear",
-      "url": "/gear",
-      "icon": "laptop"
-    },
-    {
-      "title": "📀 The Archives",
-      "url": "/arc",
-      "icon": "file-tray-full"
-    },
-    {
-      "title": "🤗 About",
-      "url": "/about",
-      "icon": "information"
+      "title": "shrines",
+      "icon": "musical-notes",
+      "menu": [
+        {
+          "description": "Pages related to the website or me :3",
+          "links": [
+            {
+              "title": "portal",
+              "url": "/portal",
+              "context": "as normal people call it, home",
+              "icon": "portal"
+            },
+            {
+              "title": "colophon",
+              "url": "/colophon",
+              "context": "stuff i used to create this website and also my inspiration to do so",
+              "icon": "cube"
+            },
+            {
+              "title": "about",
+              "url": "/about",
+              "context": "as normal people call it, home",
+              "icon": "about-me"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

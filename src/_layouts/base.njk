@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include "head.njk" %}
-  <body>
-    {% include "header.njk" %}
-    <main class="main-content">
-      {% block layout %}
+  <body {% if site_modifier %}
+    class="{{site_modifier}}"
+  {% endif %}>
+    {% block layout %}
+    <main {% if content_modifier %}class="{{content_classes}}"{% endif %}>
         {{ content | safe }}
-      {% endblock %}
     </main>
-    {% include "footer.njk" %}
+    {% endblock %}
     <script
       data-goatcounter="https://reduxflakes.goatcounter.com/count"
       async

@@ -1,0 +1,11 @@
+.swiss-spirit {
+    --background: #FF301B;
+    --on-background: #37130B;
+    --on-background-variant: #37130B;
+    --primary: #f7a82a;
+    --on-primary: #272727;
+    --on-primary-variant: hsl(0, 0%, 30%);
+    --secondary: #f9b74d;
+    line-height: 1;
+    font-family: var(--brand-font-family);
+}

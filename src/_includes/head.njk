@@ -2,12 +2,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} | {{ site.title }}</title>
+    <title>{{ title }}</title>
     <meta name="CCBot" content="nofollow">
     <meta name="robots" content="noai, noimageai">
     <meta name="tdm-reservation" content="1">
-    <meta property="og:title" content="{{ title }} | {{ site.title }}">
-    <meta name="twitter:title" content="{{ title }} | {{ site.title }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta name="twitter:title" content="{{ title }}">
     {% if description %}
         <meta name="description" content="{{ description }}">
         <meta property="og:description" content="{{ description }}">
@@ -20,28 +20,7 @@
     <meta property="og:url" content="{{site.url}}{{ page.url }}">
     <link rel="shortcut icon" href="/static/favicon.svg" type="image/x-icon">
     <meta name="generator" content="{{ eleventy.generator }}"/>
-    <link rel="stylesheet" href="/css/style.css">
-    <style>
-        .site-footer-webrings {
-            display: flex;
-            gap: 0.5em;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .social--link {
-            padding: 0.5em;
-        }
-        .social--link:hover {
-            color: var(--onBackground);
-        }
-        .social--link:hover .social--link__icon {
-            transform: rotate(360deg);
-        }
-        .social--link__icon {
-            font-size: 1.5em;
-            transition: all 300ms ease-out;
-        }
-    </style>
+    <link rel="stylesheet" href="/styles/index.css">
     {% if style_slot %}
         {% renderTemplate 'njk,md',
         slots %}

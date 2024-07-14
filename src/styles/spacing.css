@@ -1,0 +1,21 @@
+:root {
+    /* rem - based on the base font size*/
+    --sp-xxs: .25rem;
+    --sp-xs: .5rem;
+    --sp-s: .75rem;
+    --sp-m: 1rem;
+    --sp-l: 1.25rem;
+    --sp-xl: 1.75rem;
+    --sp-xxl: 2.5rem;
+
+    /* em - based on it's parent font size */
+    --spr-xxs: .25em;
+    --spr-xs: .5em;
+    --spr-s: .75em;
+    --spr-m: 1em;
+    --spr-l: 1.25em;
+    --spr-xl: 1.75em;
+    --spr-xxl: 2.5em;
+
+    --sp-breakpoint: 820px;
+}
