@@ -2,28 +2,28 @@
   "navbar": [
     {
       "title": "surface",
-      "icon": "ocean",
+      "icon": "homepage",
       "menu": [
         {
-          "description": "Pages related to the website or me :3",
+          "description": "pages related to the website and me",
           "links": [
             {
               "title": "portal",
               "url": "/portal",
               "context": "as normal people call it, home",
-              "icon": "portal"
+              "icon": "door"
             },
             {
               "title": "colophon",
               "url": "/colophon",
               "context": "stuff i used to create this website and also my inspiration to do so",
-              "icon": "cube"
+              "icon": "installer"
             },
             {
               "title": "about",
               "url": "/about",
               "context": "as normal people call it, home",
-              "icon": "about-me"
+              "icon": "info"
             }
           ]
         }
@@ -31,7 +31,7 @@
     },
     {
       "title": "writing",
-      "icon": "mic",
+      "icon": "clip-attach",
       "menu": [
         {
           "description": "Pages related to the website or me :3",
@@ -60,7 +60,7 @@
     },
     {
       "title": "design",
-      "icon": "brush",
+      "icon": "blueprint",
       "menu": [
         {
           "description": "Pages related to the website or me :3",
@@ -89,7 +89,7 @@
     },
     {
       "title": "projects",
-      "icon": "hammer",
+      "icon": "component",
       "menu": [
         {
           "description": "Pages related to the website or me :3",
@@ -118,7 +118,7 @@
     },
     {
       "title": "shrines",
-      "icon": "musical-notes",
+      "icon": "shrines",
       "menu": [
         {
           "description": "Pages related to the website or me :3",

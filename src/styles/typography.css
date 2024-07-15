@@ -85,6 +85,7 @@
 
 :root {
   font-size: clamp(0.89rem, 0.9rem + 0.390625vw, 1rem);
+  color: var(--on-background);
   --brand-font-family: "Chakra Petch";
   --content-font-family: "Inter", system-ui, sans-serif;
   --h1: bold 3.5rem/1em var(--brand-font-family);

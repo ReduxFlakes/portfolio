@@ -17,7 +17,6 @@ export default function (config) {
   md.use(markdownItAnchor, {
     tabIndex: false,
   });
-
   config.setLibrary("markdown", md);
   /* collections */
   config.addCollection("blog", function (collectionApi) {

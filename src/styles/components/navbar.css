@@ -1,33 +1,37 @@
 .sky-complex-navbar {
-    display: flex;
-    gap: var(--sp-m);
     position: relative;
-    z-index: 20;
+    margin-top: auto;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .sky-complex-navbar .navbar-menu .navbar-button {
     display: flex;
-    gap: var(--sp-xs);
+    gap: var(--sp-m);
+    font-weight: 500;
+    font-size: 1.05rem;
     cursor: pointer;
     list-style: none;
-    padding: var(--sp-xxs)  var(--sp-m);
+    padding: var(--sp-xs)  var(--sp-m);
 }
 
 .sky-complex-navbar .navbar-menu .navbar-button:hover {
-    background: var(--secondary);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.navbar-menu[open] .navbar-button{
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .navbar-menu[open] .menu-content{
     position: absolute;
-    top: 1.75rem;
-    background: var(--primary);
-    outline: 1px solid var(--on-primary-variant);
-    padding: var(--spr-xxs);
-}
-
-.navbar-menu[open] .menu-content small {
-    border-bottom: 1px solid var(--on-primary);
-    padding-block-end: var(--spr-xs);
+    z-index: 150;
+    left: 0;
+    padding: var(--sp-xs);
+    background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.3));
+    backdrop-filter: blur(8px);
+    width: 100%;
 }
 
 .menu-nav {
@@ -38,10 +42,12 @@
 
 .menu-nav__link {
     display: flex;
-    padding: var(--spr-xxs);
-    gap: var(--spr-xs);
+    align-items: center;
+    padding: var(--sp-xxs);
+    gap: var(--sp-xs);
 }
 
 .menu-nav__link:hover {
-    background: var(--secondary);
+    background: white;
+    color: black;
 }

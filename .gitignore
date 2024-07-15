@@ -1,6 +1,6 @@
 node_modules/
 _site/
 
-.env
 bun.lockb
 package-lock.json
+.env

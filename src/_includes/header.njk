@@ -1,11 +1,4 @@
-<header class="sky-brand-header full-width">
-<section class="brand-header-top">
-    <h1>reduxflakes</h1>
-    <section>
-        <h2 class="subheading">connect</h2>
-        <svg style="margin: auto;" xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><rect width="6" height="14" x="1" y="4" fill="currentColor"><animate id="svgSpinnersBarsFade0" fill="freeze" attributeName="opacity" begin="0;svgSpinnersBarsFade1.end-0.3s" dur="0.9s" values="1;0.2"/></rect><rect width="6" height="14" x="9" y="4" fill="currentColor" opacity="0.4"><animate fill="freeze" attributeName="opacity" begin="svgSpinnersBarsFade0.begin+0.18s" dur="0.9s" values="1;0.2"/></rect><rect width="6" height="14" x="17" y="4" fill="currentColor" opacity="0.3"><animate id="svgSpinnersBarsFade1" fill="freeze" attributeName="opacity" begin="svgSpinnersBarsFade0.begin+0.36s" dur="0.9s" values="1;0.2"/></rect></svg>
-    </section>
-</section>
+<header class="sky-brand-header">
 <nav class="sky-complex-navbar">
 {% for item in nav.navbar %}
     <details class="navbar-menu">
@@ -15,6 +8,7 @@
         </summary>
         <section class="menu-content">
         {% for meta in item.menu %}
+        <small style="display:block; opacity: 0.75;"><em>Description:</em></small>
         <small>{{meta.description}}</small>
         <nav class="menu-nav">
         {% for links in meta.links %}

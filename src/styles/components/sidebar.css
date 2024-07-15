@@ -1,0 +1,33 @@
+.stripe-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url("/static/images/backgrounds/breath.png"), linear-gradient(to bottom, #2C2C2C, #101010);
+    background-repeat: repeat-y;
+    padding-block: var(--sp-xs);
+}
+
+.stripe-sidebar__title {
+    color: rgb(208, 208, 208);
+    text-shadow: 0px 0px 8px black;
+    font-family: var(--brand-font-family);
+    font-size: 1.9rem;
+    letter-spacing: -1px;
+    font-weight: bolder;
+    writing-mode:vertical-rl;
+    rotate: -180deg;
+}
+
+.infobox-sidebar {
+    padding: var(--sp-m);
+    background: rgb(64,64,64);
+background: linear-gradient(to right, rgba(64,64,64,1) 0%, rgba(25, 25, 25, 0.8) 10%, rgba(56,56,56,0.8) 90%, rgba(84,84,84,1) 100%);
+box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+backdrop-filter: blur(4px);
+}
+
+.infobox-sidebar img {
+    margin: 0 auto;
+    width: 92px;
+    height: 92px
+}

@@ -18,14 +18,19 @@
 a:hover > span {
     position: fixed;
     display: block;
+    text-align: center;
     top: 0;
-left: 0;
-right: 0;
-width: fit-content;
+    right: 0;
+    left: 0;
+    width: 100%;
 margin: 0 auto;
-padding: 0 var(--sp-xs);
-    z-index: 100;
-    background: var(--on-primary);
-    color: var(--primary);
-    border-radius: 0 0 8px 8px;
+    z-index: 1000;
+    padding: var(--sp-xxs) var(--sp-m);
+    backdrop-filter: blur(8px);
+    background: linear-gradient(to bottom, rgba(106, 106, 106, 0.6), rgba(23, 23, 23, 0.6));
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    text-shadow: 0px 0px 2px black;
+    color: white;
 }
+
+

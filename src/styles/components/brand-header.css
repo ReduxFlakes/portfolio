@@ -1,13 +1,9 @@
 .sky-brand-header {
-    padding-block-start: var(--sp-s);
-    background: var(--primary);
-}
-
-.sky-brand-header * {
-    color: var(--on-primary-variant);
-}
-
-.brand-header-top {
+    position: sticky;
+    top: 0;
+    right: 0;
+    margin-left: auto;
     display: flex;
-    justify-content: space-between;
+    background: linear-gradient(to bottom, #000000ee, rgba(0, 0, 0, 0));
+    z-index: 99;
 }
