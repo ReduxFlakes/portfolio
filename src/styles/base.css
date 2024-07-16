@@ -62,12 +62,8 @@ p, h1, h2, h3, h4, h5, h6 {
     scroll-behavior: auto !important;
   }
 }
-
-html, body {
-  overflow: hidden;
-}
-
 body {
+  position: relative;
     background: var(--background);
     color: var(--on-background);
     font-family: var(--content-font-family);

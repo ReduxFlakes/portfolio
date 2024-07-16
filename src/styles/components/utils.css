@@ -16,15 +16,11 @@
 }
 
 a:hover > span {
-    position: fixed;
-    display: block;
-    text-align: center;
+    position: absolute;
     top: 0;
-    right: 0;
     left: 0;
-    width: 100%;
-margin: 0 auto;
-    z-index: 1000;
+    right: 0;
+    display: block;
     padding: var(--sp-xxs) var(--sp-m);
     backdrop-filter: blur(8px);
     background: linear-gradient(to bottom, rgba(106, 106, 106, 0.6), rgba(23, 23, 23, 0.6));
@@ -34,3 +30,13 @@ margin: 0 auto;
 }
 
 
+.tippy-box[data-theme~='gt5'] {
+    border-top: 1px solid gray;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.5), black);
+    color: inherit;
+    font-family: inherit;
+  }
+
+  .tippy-box[data-theme~='gt5'][data-placement^='right'] > .tippy-arrow::before {
+    border-right-color: #315788;
+  }

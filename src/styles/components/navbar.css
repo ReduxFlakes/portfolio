@@ -1,7 +1,7 @@
 .sky-complex-navbar {
     position: relative;
     margin-top: auto;
-    margin-inline: auto;
+    margin-inline-start: auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -26,9 +26,11 @@
 
 .navbar-menu[open] .menu-content{
     position: absolute;
-    z-index: 150;
+    z-index: 2;
     left: 0;
     padding: var(--sp-xs);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 2px 4px 0px black;
     background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.3));
     backdrop-filter: blur(8px);
     width: 100%;
