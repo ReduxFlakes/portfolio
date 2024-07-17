@@ -2,6 +2,7 @@
 title: Blog
 layout: list.njk
 description: Ramblings, lifestyle and programming.
+permalink: "/posts/"
 ---
 
 {%- for post in collections.blog | reverse -%}

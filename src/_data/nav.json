@@ -9,20 +9,20 @@
           "links": [
             {
               "title": "portal",
-              "url": "/portal",
+              "url": "/",
               "context": "as normal people call it, home",
               "icon": "door"
             },
             {
               "title": "colophon",
               "url": "/colophon",
-              "context": "stuff i used to create this website and also my inspiration to do so",
+              "context": "stuff used to make this website (and also my inspiration)",
               "icon": "installer"
             },
             {
               "title": "about",
               "url": "/about",
-              "context": "as normal people call it, home",
+              "context": "about the webmaster",
               "icon": "info"
             }
           ]
@@ -34,25 +34,13 @@
       "icon": "clip-attach",
       "menu": [
         {
-          "description": "Pages related to the website or me :3",
+          "description": "Collection of posts of various topics",
           "links": [
             {
-              "title": "portal",
-              "url": "/portal",
-              "context": "as normal people call it, home",
-              "icon": "portal"
-            },
-            {
-              "title": "colophon",
-              "url": "/colophon",
-              "context": "stuff i used to create this website and also my inspiration to do so",
-              "icon": "cube"
-            },
-            {
-              "title": "about",
-              "url": "/about",
-              "context": "as normal people call it, home",
-              "icon": "about-me"
+              "title": "blog",
+              "url": "/posts",
+              "context": "my blog, nothing more",
+              "icon": "blog-post"
             }
           ]
         }

@@ -3,7 +3,6 @@
     left: 0;
     position: sticky;
     height: 100svh;
-    z-index: 1;
 }
 
 .stripe-sidebar {
@@ -41,15 +40,20 @@
 }
 
 .infobox-sidebar {
-    padding: var(--sp-xs);
+    padding: var(--sp-s);
     background: rgb(64,64,64);
 background: linear-gradient(to right, rgba(64,64,64,1) 0%, rgba(25, 25, 25, 0.8) 10%, rgba(56,56,56,0.8) 90%, rgba(84,84,84,1) 100%);
 box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
 backdrop-filter: blur(4px);
 }
 
-.infobox-sidebar img {
-    margin: 0 auto;
-    width: 92px;
-    height: 92px;
+.infobox-sidebar .u-photo {
+    border-radius: 6px;
+    width: 82px;
+    height: 82px;
+}
+
+.infobox-sidebar .h-card {
+    display: grid;
+    gap: 0.3em;
 }
