@@ -3,15 +3,14 @@
 {% set site_modifier = "site-container" %}
 
 {% block layout %}
-<div class="funky-container">
-{% include "stripe-sidebar.njk" %}
-{% include "sidebar.njk" %}
-<div class="content-container">
-   {% include "header.njk" %}
-   <main {% if content_modifier %}class="{{content_classes}}"{% endif %}>
-      {{ content | safe }}
-  </main>
-   {% include "footer.njk" %}
-</div>
-</div>
+   <div class="site">
+      {% include "sidebar.njk" %}
+      <div class="page">
+         {% include "header.njk" %}
+         <main class="container {%- if content_modifier -%}{{content_classes}}{%- endif -%}">
+            {{ content | safe }}
+         </main>
+         {% include "footer.njk" %}
+      </div>
+   </div>
 {% endblock %}

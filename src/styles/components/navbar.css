@@ -1,55 +1,69 @@
-.sky-complex-navbar {
-    position: relative;
-    margin-top: auto;
-    margin-inline-start: auto;
-    display: flex;
-    flex-wrap: wrap;
+.site-navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap;
+  z-index: 20;
+  background: linear-gradient(to bottom, black, transparent);
 }
 
-.sky-complex-navbar .navbar-menu .navbar-button {
-    display: flex;
-    gap: var(--sp-m);
-    font-weight: 500;
-    font-size: 1.05rem;
-    cursor: pointer;
-    list-style: none;
-    padding: var(--sp-xs)  var(--sp-m);
+.site-navbar .navbar-button {
+  display: flex;
+  gap: var(--sp-m);
+  font-weight: 500;
+  font-size: 1.05rem;
+  cursor: pointer;
+  list-style: none;
+  text-shadow: 0 0 3px rgba(0, 0, 0);
+  padding: var(--sp-xs) var(--sp-m);
 }
 
-.sky-complex-navbar .navbar-menu .navbar-button:hover {
-    background: rgba(255, 255, 255, 0.25);
+.site-navbar .navbar-button:hover {
+  background: linear-gradient(to bottom, #ff6db3, hsl(331, 100%, 55%));
 }
 
-.navbar-menu[open] .navbar-button{
-    background: rgba(255, 255, 255, 0.15);
+.navbar-menu[open] .navbar-button {
+  background: rgba(255, 255, 255, 0.15);
 }
 
-.navbar-menu[open] .menu-content{
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    padding: var(--sp-xs);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 2px 4px 0px black;
-    background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.3));
-    backdrop-filter: blur(8px);
-    width: 100%;
+.navbar-menu[open] .menu-content {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  padding: var(--sp-xs);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 2px 4px 0px black;
+  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.3));
+  backdrop-filter: blur(8px);
+  width: 100%;
+}
+
+.navbar-menu[open] .navbar-button::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: auto;
+  overflow-y: auto;
 }
 
 .menu-nav {
-    display: flex;
-    flex-direction: column;
-    padding-block-start: var(--sp-xs);
+  display: flex;
+  flex-direction: column;
+  padding-block-start: var(--sp-xs);
 }
 
 .menu-nav__link {
-    display: flex;
-    align-items: center;
-    padding: var(--sp-xxs);
-    gap: var(--sp-xs);
+  display: flex;
+  align-items: center;
+  padding: var(--sp-xxs);
+  gap: var(--sp-xs);
 }
 
 .menu-nav__link:hover {
-    background: white;
-    color: black;
+  background: white;
+  color: black;
 }

@@ -1,14 +1,14 @@
 :root {
-    /* rem - based on the base font size*/
-    --sp-xxs: .25rem;
-    --sp-xs: .5rem;
-    --sp-s: .75rem;
-    --sp-m: 1rem;
-    --sp-l: 1.25rem;
-    --sp-xm: 1.75rem;
-    --sp-xxm: 2rem;
-    --sp-xl: ;
-    --sp-xxl: 2.5rem;
+  /* rem - based on the base font size*/
+  --sp-xxs: 0.25rem;
+  --sp-xs: 0.5rem;
+  --sp-s: 0.75rem;
+  --sp-m: 1rem;
+  --sp-l: 1.25rem;
+  --sp-xm: 1.75rem;
+  --sp-xxm: 2rem;
+  --sp-xl: ;
+  --sp-xxl: 2.5rem;
 
-    --sp-breakpoint: 980px;
+  --sp-breakpoint: 960px;
 }

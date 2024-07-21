@@ -1,59 +1,61 @@
-.stripe-sidebar, .infobox-sidebar {
-    top: 0;
-    left: 0;
-    position: sticky;
-    height: 100svh;
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background: linear-gradient(to bottom, hsla(0, 0%, 100%, 0), rgb(27, 3, 51));
 }
 
-.stripe-sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: url("/static/images/backgrounds/breath.png"), linear-gradient(to bottom, #2C2C2C, #101010);
-    background-repeat: repeat-y;
-    padding-block: var(--sp-xs);
+.sidebar::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3),
+    transparent 15%,
+    transparent 85%,
+    rgba(255, 255, 255, 0.3)
+  );
+  box-shadow: inset 0px 1px rgba(255, 255, 255, 0.3),
+    inset -1px 0 rgba(127, 255, 255, 0.5),
+    inset 0px -1px rgba(127, 255, 255, 0.5), inset 1px 0 hsla(0, 0%, 100%, 0.3);
+  z-index: 999;
 }
 
-.stripe-sidebar__title {
-    color: rgb(208, 208, 208);
-    text-shadow: 0px 0px 8px black;
-    font-family: var(--brand-font-family);
-    font-size: 1.9rem;
-    letter-spacing: -1px;
-    font-weight: bolder;
-    writing-mode:vertical-rl;
-    rotate: -180deg;
-
+.sidebar {
+  image-rendering: pixelated;
+  background: url("/static/images/backgrounds/breath.png"),
+    linear-gradient(to bottom, hsla(0, 0%, 20%), hsla(264, 11%, 9%));
+  background-repeat: repeat-y;
+  box-shadow: inset 0px 0px 8px 0px black;
+  padding: var(--sp-xs);
 }
 
-.stripe-sidebar .external-connections {
-    display: flex;
-    margin-inline: auto;
-    flex-direction: column;
-    
+.nav-buttons {
+  display: grid;
+  gap: var(--sp-xs);
 }
 
-.stripe-sidebar .external-connections .link-btn {
-    display: block;
-    width: 38px;
-    height: 38px;
+.sidebar__title {
+  color: rgb(191, 191, 191);
+  text-shadow: 0px 0px 4px black;
+  font-family: var(--brand-font-family);
+  font-size: 1.9rem;
+  letter-spacing: -1.5px;
+  font-weight: bolder;
+  writing-mode: vertical-rl;
+  padding-inline: var(--sp-xs);
+  rotate: -180deg;
 }
 
-.infobox-sidebar {
-    padding: var(--sp-s);
-    background: rgb(64,64,64);
-background: linear-gradient(to right, rgba(64,64,64,1) 0%, rgba(25, 25, 25, 0.8) 10%, rgba(56,56,56,0.8) 90%, rgba(84,84,84,1) 100%);
-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
-backdrop-filter: blur(4px);
-}
-
-.infobox-sidebar .u-photo {
-    border-radius: 6px;
-    width: 82px;
-    height: 82px;
-}
-
-.infobox-sidebar .h-card {
-    display: grid;
-    gap: 0.3em;
+.sidebar .link-btn {
+  display: block;
+  width: 38px;
+  height: 38px;
+  image-rendering: initial;
 }
