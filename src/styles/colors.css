@@ -1,6 +1,6 @@
 /* color scheme */
 :root {
-  --background: linear-gradient(to bottom, #000000, #1a182a);
+  --background: linear-gradient(to bottom, #111111, #211e34);
   --on-background: #dfdfdf;
   --on-background-variant: #f7f7f7;
   --primary: #ff70a0;

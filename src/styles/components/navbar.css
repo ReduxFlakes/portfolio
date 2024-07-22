@@ -15,12 +15,16 @@
   font-size: 1.05rem;
   cursor: pointer;
   list-style: none;
-  text-shadow: 0 0 3px rgba(0, 0, 0);
+  text-shadow: 0 0 2px rgba(0, 0, 0);
   padding: var(--sp-xs) var(--sp-m);
 }
 
 .site-navbar .navbar-button:hover {
-  background: linear-gradient(to bottom, #ff6db3, hsl(331, 100%, 55%));
+  background: linear-gradient(
+    to bottom,
+    hsla(331, 100%, 71%, 0.8),
+    hsla(331, 100%, 55%, 0.8)
+  );
 }
 
 .navbar-menu[open] .navbar-button {
@@ -31,12 +35,15 @@
   position: absolute;
   z-index: 2;
   left: 0;
+  right: 0;
   padding: var(--sp-xs);
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0px 2px 4px 0px black;
   background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.3));
   backdrop-filter: blur(8px);
-  width: 100%;
+  width: calc(100% - 2rem);
+  margin: var(--sp-m);
+  border-radius: 4px;
 }
 
 .navbar-menu[open] .navbar-button::before {

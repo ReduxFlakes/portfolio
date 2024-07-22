@@ -45,3 +45,13 @@ https://youtu.be/c13gpBrnGEw
   display: grid;
   grid-template-columns: inherit;
 }
+
+.grid {
+  display: grid;
+  padding: var(--sp-m);
+  gap: var(--sp-m);
+}
+
+.grid--5 {
+  grid-template-columns: repeat(5, 1fr);
+}
