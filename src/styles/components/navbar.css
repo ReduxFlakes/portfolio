@@ -1,8 +1,8 @@
 .site-navbar {
-  display: flex;
-  justify-content: flex-end;
   position: sticky;
   top: 0;
+  display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
   z-index: 20;
   background: linear-gradient(to bottom, black, transparent);
@@ -22,8 +22,8 @@
 .site-navbar .navbar-button:hover {
   background: linear-gradient(
     to bottom,
-    hsla(331, 100%, 71%, 0.8),
-    hsla(331, 100%, 55%, 0.8)
+    hsla(0, 0%, 100%, 0.5),
+    hsla(0, 0%, 100%, 0.25)
   );
 }
 
@@ -33,17 +33,15 @@
 
 .navbar-menu[open] .menu-content {
   position: absolute;
-  z-index: 2;
   left: 0;
   right: 0;
   padding: var(--sp-xs);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0px 2px 4px 0px black;
-  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.3));
-  backdrop-filter: blur(8px);
-  width: calc(100% - 2rem);
   margin: var(--sp-m);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.3));
   border-radius: 4px;
+  backdrop-filter: blur(4px);
+  z-index: 20;
 }
 
 .navbar-menu[open] .navbar-button::before {
