@@ -51,25 +51,31 @@
       "icon": "blueprint",
       "menu": [
         {
-          "description": "Pages related to the website or me :3",
+          "description": "All of my design projects",
           "links": [
             {
-              "title": "portal",
-              "url": "/portal",
-              "context": "as normal people call it, home",
-              "icon": "portal"
+              "title": "design projects",
+              "url": "/design",
+              "context": "all of my design projects",
+              "icon": "design"
             },
             {
-              "title": "colophon",
-              "url": "/colophon",
-              "context": "stuff i used to create this website and also my inspiration to do so",
-              "icon": "cube"
+              "title": "mockups",
+              "url": "/design/mockups",
+              "context": "every mockup project, from OSM to Software/Web",
+              "icon": "blueprint_rule"
             },
             {
-              "title": "about",
-              "url": "/about",
-              "context": "as normal people call it, home",
-              "icon": "about-me"
+              "title": "logos",
+              "url": "/design/logos",
+              "context": "logos i've made",
+              "icon": "graphic-tools"
+            },
+            {
+              "title": "research",
+              "url": "/design/research",
+              "context": "design collections i've researched over the years",
+              "icon": "document-edit"
             }
           ]
         }

@@ -15,7 +15,8 @@
   display: none;
 }
 
-a:hover > span.context {
+a:hover > span.context,
+a:focus > span.context {
   position: absolute;
   top: 0;
   left: 0;

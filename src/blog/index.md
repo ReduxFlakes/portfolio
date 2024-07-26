@@ -1,8 +1,8 @@
 ---
 title: Blog
-layout: list.njk
+layout: page.njk
 description: Ramblings, lifestyle and programming.
-permalink: "/posts/"
+permalink: "/blog/"
 ---
 
 {%- for post in collections.blog | reverse -%}
