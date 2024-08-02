@@ -1,0 +1,36 @@
+:root {
+  /* spacing units */
+  --sp-xxs: 0.25rem;
+  --sp-xs: 0.5rem;
+  --sp-s: 0.75rem;
+  --sp-m: 1rem;
+  --sp-l: 1.25rem;
+  --sp-xm: 1.75rem;
+  --sp-xxm: 2rem;
+  --sp-xl: 2.25rem;
+  --sp-xxl: 2.5rem;
+  --sp-breakpoint: 840px;
+  /* typography */
+  --content-font-family: monospace;
+  --h1: lighter 2.25rem/1.125em var(--content-font-family);
+  --h2: lighter 1.8rem/1.2em var(--content-font-family);
+  --h3: lighter 1.55rem/1.35em var(--content-font-family);
+  --h4: lighter 1.3rem/1.4em var(--content-font-family);
+  --h5: lighter 1.125rem/1.4em var(--content-font-family);
+  --h6: lighter 1.025rem/1.5em var(--content-font-family);
+  --small: normal 0.825rem/1.5em var(--content-font-family);
+  /* theme */
+  --background: #24030f;
+  --on-background: #ebd5d8;
+  --surface-low: #39131b;
+  --darkslateblue: #233476;
+  --on-darkslateblue: hsl(228, 54%, 96%);
+  --firebrick: #851616;
+  --on-firebrick: hsl(0, 68%, 96%);
+  --bigblue: #0000e8;
+  --surface: #1c2536;
+  --primary: #f97aa2;
+  --tips: #0bc3a9;
+  --muted: #8e95a8;
+  color-scheme: dark;
+}

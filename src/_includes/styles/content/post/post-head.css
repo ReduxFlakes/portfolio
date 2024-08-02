@@ -1,0 +1,5 @@
+.post-head {
+  display: grid;
+  gap: var(--sp-xs);
+  margin-bottom: var(--sp-xxm);
+}

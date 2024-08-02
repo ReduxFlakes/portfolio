@@ -1,0 +1,23 @@
+scrollable-box {
+  --_max-height: var(--max-height, 300px);
+  background: #246356;
+  color: #a1efdf;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: var(--sp-xxs);
+  max-height: var(--_max-height);
+  box-shadow: 0px 0px 2px 0px black;
+}
+
+scrollable-box-flex {
+  --_scrollbar-theme: var(--scrollbar-theme, #f97aa2 #24030f);
+  display: flex;
+  gap: var(--sp-xs);
+  padding: var(--sp-xs) calc(var(--sp-xs) + 32px) var(--sp-xs) 1px;
+  overflow-x: auto;
+  scrollbar-color: var(--_scrollbar-theme);
+  mask-image: linear-gradient(
+    to right,
+    black calc(100% - 32px),
+    rgba(255, 255, 255, 0.3) 100%
+  );
+}

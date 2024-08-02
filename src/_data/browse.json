@@ -1,0 +1,51 @@
+[
+  {
+    "title": "SurfScape",
+    "type": "project",
+    "description": "My software organization related to security and privacy.",
+    "link": "/projects/surfscape",
+    "bg": "#072378"
+  },
+  {
+    "title": "Directory",
+    "type": "collection",
+    "description": "My collection of favorites websites on the web!",
+    "link": "/directory",
+    "bg": "#165E94"
+  },
+  {
+    "title": "Mockups",
+    "type": "gallery",
+    "description": "A gallery of my best mockups, mostly OSM related.",
+    "link": "/design/mockups",
+    "bg": "#078C1F"
+  },
+  {
+    "title": "Opinions",
+    "type": "listing",
+    "description": "A place where I speak what’s on my mind about various things.",
+    "link": "/opinions",
+    "bg": "#843E09"
+  },
+  {
+    "title": "Things I Use",
+    "type": "page",
+    "description": "The stuff I use for daily for work. (Software and hardware).",
+    "link": "/gear",
+    "bg": "#793A80"
+  },
+  {
+    "title": "LIVE Network",
+    "type": "project",
+    "description": "A private network of awesome sites, inspired by The Network Neighborhood. ",
+    "link": "/design/mockups",
+    "bg": "linear-gradient(to bottom, #0C135C, #290646)"
+  },
+  {
+    "title": "NavStar",
+    "type": "listing",
+    "description": "Advanced Sitemap Navigation System.",
+    "link": "/navstar",
+    "bg": "#014E57"
+  }
+]

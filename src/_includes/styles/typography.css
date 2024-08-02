@@ -1,0 +1,46 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -1px;
+}
+
+h1 {
+  font: var(--h1);
+}
+
+h2 {
+  font: var(--h2);
+}
+
+h3 {
+  font: var(--h3);
+}
+
+h4 {
+  font: var(--h4);
+}
+
+h5 {
+  font: var(--h5);
+}
+
+h6 {
+  font: var(--h6);
+}
+
+small {
+  font: var(--small);
+}
+
+strong {
+  font-family: var(--brand-font-family);
+  font-weight: bold;
+}
+
+.subheading {
+  font: var(--h3);
+  font-weight: lighter;
+}

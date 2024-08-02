@@ -1,0 +1,31 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--surface-low);
+  padding: var(--sp-xxs) var(--sp-s);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header__title {
+  font-size: 1.25rem;
+}
+
+.navigation__link {
+  font-family: var(--brand-font-family);
+}
+
+.quick-links {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-xs);
+}
+
+.quick-links > a {
+  padding: var(--sp-xxs);
+}
+
+.quick-links > a > img {
+  width: 20px;
+  height: 20px;
+}

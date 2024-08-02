@@ -18,9 +18,14 @@
         <meta name="twitter:description" content="{{ site.description }}">
     {% endif %}
     <meta property="og:url" content="{{site.url}}{{ page.url }}">
-    <link rel="shortcut icon" href="/static/favicon.svg" type="image/x-icon">
+    <meta property="og:image" content="/static/images/neolink.png">
+    <link rel="shortcut icon" href="/static/favicon.png" type="image/x-icon">
     <meta name="generator" content="{{ eleventy.generator }}"/>
-    <link rel="stylesheet" href="/styles/index.css">
+    <style>
+        {% getBundle "css", "critical" %}
+    </style>
+    {% css %}{% include "styles/index.css" %}{% endcss %}
+    <link rel="stylesheet" href="{% getBundleFileUrl 'css' %}">
     {% if style_slot %}
         {% renderTemplate 'njk,md',
         slots %}

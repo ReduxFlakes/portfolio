@@ -1,0 +1,12 @@
+{% extends "./page.njk" %}
+
+{% block content %}
+<header class="post-head">
+    <h1>{{title}}</h1>
+    <p>{{description}}</p>
+    <time datetime="">{{date}}</time>
+</header>
+<article class="container content">
+    {{ content | safe }}
+</article>
+{% endblock %}

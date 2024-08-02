@@ -1,4 +1,4 @@
 {
-  "layout": "page.njk",
-  "permalink":"/posts/{{title | slugify}}"
+  "layout": "post.njk",
+  "permalink": "/posts/{{title | slugify}}/"
 }

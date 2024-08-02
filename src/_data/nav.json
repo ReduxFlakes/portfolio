@@ -1,4 +1,26 @@
 {
+  "quicklinks": [
+    {
+      "title": "Blog",
+      "icon": "blog-post",
+      "url": "/posts"
+    },
+    {
+      "title": "Desing",
+      "icon": "design",
+      "url": "/design"
+    },
+    {
+      "title": "Projects",
+      "icon": "component",
+      "url": "/projects"
+    },
+    {
+      "title": "About",
+      "icon": "info",
+      "url": "/about"
+    }
+  ],
   "navbar": [
     {
       "title": "surface",
@@ -86,25 +108,13 @@
       "icon": "component",
       "menu": [
         {
-          "description": "Pages related to the website or me :3",
+          "description": "All the work that I have done",
           "links": [
             {
-              "title": "portal",
-              "url": "/portal",
-              "context": "as normal people call it, home",
-              "icon": "portal"
-            },
-            {
-              "title": "colophon",
-              "url": "/colophon",
-              "context": "stuff i used to create this website and also my inspiration to do so",
-              "icon": "cube"
-            },
-            {
-              "title": "about",
-              "url": "/about",
-              "context": "as normal people call it, home",
-              "icon": "about-me"
+              "title": "projects",
+              "url": "/projects",
+              "context": "list of my most popular and active projects",
+              "icon": "projects"
             }
           ]
         }
@@ -118,22 +128,16 @@
           "description": "Pages related to the website or me :3",
           "links": [
             {
-              "title": "portal",
-              "url": "/portal",
-              "context": "as normal people call it, home",
-              "icon": "portal"
+              "title": "Windows Vista",
+              "url": "/shrines/vista",
+              "context": "my tribute to Windows Vista",
+              "icon": "vista-hm-box"
             },
             {
-              "title": "colophon",
-              "url": "/colophon",
-              "context": "stuff i used to create this website and also my inspiration to do so",
-              "icon": "cube"
-            },
-            {
-              "title": "about",
-              "url": "/about",
-              "context": "as normal people call it, home",
-              "icon": "about-me"
+              "title": "Firefox",
+              "url": "/shrine/firefox",
+              "context": "bring back our fox!",
+              "icon": "firefox"
             }
           ]
         }

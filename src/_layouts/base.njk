@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{site.lang}}">
   {% include "head.njk" %}
   <body {% if site_modifier %}class="{{site_modifier}}"{% endif %}>
     {% block layout %}
       {{ content | safe }}
     {% endblock %}
-    <script src="/static/scripts/popper.min.js"></script>
-    <script src="/static/scripts/tippy-bundle.umd.min.js"></script>
-    <script src="/static/scripts/tooltips.js"></script>
     <script
       data-goatcounter="https://reduxflakes.goatcounter.com/count"
       async

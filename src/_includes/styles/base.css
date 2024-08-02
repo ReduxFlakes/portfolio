@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+  list-style: none;
+}
+nav * {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+  font-style: italic;
+  image-rendering: pixelated;
+}
+
+iframe {
+  border: 0;
+}
+
+input,
+button {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+img:not([alt]) {
+  filter: blur(10px);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  background: var(--background);
+  color: var(--on-background);
+  font-size: clamp(0.85rem, 0.85rem + 0.390625vw, 0.9rem);
+  font-family: var(--content-font-family);
+}
+
+a {
+  --_active-outline: var(--active-outline, var(--primary));
+  color: var(--primary);
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1.25px;
+}
+
+a:focus,
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: 1px dashed var(--_active-outline);
+}
