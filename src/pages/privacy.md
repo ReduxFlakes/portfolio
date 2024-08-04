@@ -1,8 +1,9 @@
 ---
 title: Privacy Policy
-layout: page.njk
+layout: base.njk
 update: 2023-12-23T00:00:00
 description: Website privacy measuers and handling of data.
+permalink: "/privacy/"
 ---
 
 As a privacy advocate myself, I take privacy pretty seriously. This website uses GoatCounter as a way to count users and see what browser they use so that I can see how well the website is doing. Even though I don't really get paid by how many users visit my website, I do take up a lot of my time to build it and if nobody is interested I can then use my time on other things that are more important.

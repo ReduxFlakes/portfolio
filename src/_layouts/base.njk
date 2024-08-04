@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{site.lang}}">
   {% include "head.njk" %}
-  <body {% if site_modifier %}class="{{site_modifier}}"{% endif %}>
-    {% block layout %}
-      {{ content | safe }}
+  <body>
+    {% include "partials/header.njk" %}
+    {% block base %}
+      <main id="main-content" class="flow">
+        {{ content | safe }}
+      </main>
     {% endblock %}
+    {% include "partials/aside.njk" %}
+    {% include "partials/footer.njk" %}
     <script
       data-goatcounter="https://reduxflakes.goatcounter.com/count"
       async

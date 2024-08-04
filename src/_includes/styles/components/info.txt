@@ -1,2 +1,0 @@
-These components are what make the design system of the website. 
-Since I like to add a name to everything I make, this design system and language is called Sky hence why the component classes start with it :).

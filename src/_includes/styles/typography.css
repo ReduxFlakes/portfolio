@@ -1,46 +1,55 @@
-h1,
-h2,
-h3,
-h4,
-h5,
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/static/fonts/open-sans-v40-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/static/fonts/open-sans-v40-latin-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/static/fonts/open-sans-v40-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/static/fonts/open-sans-v40-latin-700italic.woff2") format("woff2");
+}
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
 h6 {
-  letter-spacing: -1px;
+  font-weight: normal;
 }
 
-h1 {
-  font: var(--h1);
-}
-
-h2 {
-  font: var(--h2);
-}
-
-h3 {
-  font: var(--h3);
-}
-
-h4 {
-  font: var(--h4);
-}
-
-h5 {
-  font: var(--h5);
-}
-
-h6 {
-  font: var(--h6);
-}
-
-small {
-  font: var(--small);
-}
-
-strong {
-  font-family: var(--brand-font-family);
+strong,
+b {
   font-weight: bold;
 }
 
-.subheading {
-  font: var(--h3);
-  font-weight: lighter;
+em,
+i {
+  font-style: italic;
 }

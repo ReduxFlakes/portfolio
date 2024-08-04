@@ -1,8 +1,3 @@
-@import url(base.css);
-@import url(variables.css);
-@import url(typography.css);
-@import url(layout.css);
-@import url(content.css);
-@import url(components/card.css);
-@import url(components/box.css);
-@import url(components/utils.css);
+@import url("base.css");
+@import url("properties.css");
+@import url("typography.css");

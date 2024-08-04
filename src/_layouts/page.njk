@@ -1,13 +1,13 @@
 {% extends "./base.njk" %}
 
-{% set site_modifier = "site-container" %}
-
-{% block layout %}
-   {% include "header.njk" %}
-   <main class="page-container {%- if content_modifier -%}{{content_modifier}}{%- endif -%}">
-      {% block content %}
-         {{ content | safe }}
-      {% endblock content %}
-   </main>
-   {% include "footer.njk" %}
+{% block base %}
+    <main id="main-content" class="flow">
+        <header class="page-meta">
+            <h1>{{title}}</h1>
+            <p>{{description}}</p>
+        </header>
+        <article class="flow">
+            {{ content | safe }}
+        </article>
+    </main>
 {% endblock %}

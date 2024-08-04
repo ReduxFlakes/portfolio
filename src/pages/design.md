@@ -1,8 +1,9 @@
 ---
 title: Design
-layout: page.njk
+layout: base.njk
 update: 2024-05-17T00:07:00
 description: Web design, logos, mockups, and more.
+permalink: "/design/"
 ---
 
 In the past few years I've designed a lot of stuff, from logos, to websites. On this page you can find some of that work, these include OSM (Operating System mockups), buttons, and logos for projects.
@@ -15,6 +16,14 @@ In the past few years I've designed a lot of stuff, from logos, to websites. On 
 
 Button used on the [SurfScape Community](https://surfscape.neocities.org/community) page to share and link the Discord server.
 
-<img src="/static/buttons/reduxflakes.gif" alt="ReduxFlakes Website Button">
+<img src="/static/images/button-animated.gif" alt="ReduxFlakes reducc animated button">
 
-My own website button! Inspired by the green color scheme, blurred website logo on the background pared with the iconic Helvetica font! Use it if you want to share my website.
+My own website button! Use it when linking my website, but please don't hotlink and save the button to your website instead.
+
+### Static version
+
+<img src="/static/images/button.png" alt="ReduxFlakes reducc animated button">
+
+### Older version
+
+<img src="/static/buttons/reduxflakes.gif" alt="ReduxFlakes Website Button">

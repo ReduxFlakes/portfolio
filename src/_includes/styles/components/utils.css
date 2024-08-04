@@ -28,3 +28,7 @@ a:focus > span.context {
   color: var(--surface);
   text-align: center;
 }
+
+.datetime {
+  opacity: 0.6;
+}

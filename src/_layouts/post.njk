@@ -1,12 +1,15 @@
-{% extends "./page.njk" %}
+{% extends "./base.njk" %}
+
+{% set is_post = true %}
+{% css "post" %}{% include "styles/modules/blog-module.css" %}{% endcss %}
 
 {% block content %}
-<header class="post-head">
-    <h1>{{title}}</h1>
-    <p>{{description}}</p>
-    <time datetime="">{{date}}</time>
-</header>
-<article class="container content">
-    {{ content | safe }}
-</article>
+    <header class="post-head">
+        <h1>{{title}}</h1>
+        <p>{{description}}</p>
+        <time datetime="{{date}}" class="datetime">{{date | formatPostDate}}</time>
+    </header>
+    <article class="container content">
+        {{ content | safe }}
+    </article>
 {% endblock %}

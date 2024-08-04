@@ -1,35 +1,46 @@
 <head>
+
+    <title>{{ title }}</title>
+    <base href="{{page.url}}">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <meta name="color-scheme" content="dark light"/>
+
     <meta name="CCBot" content="nofollow">
     <meta name="robots" content="noai, noimageai">
     <meta name="tdm-reservation" content="1">
-    <meta property="og:title" content="{{ title }}">
-    <meta name="twitter:title" content="{{ title }}">
-    {% if description %}
-        <meta name="description" content="{{ description }}">
-        <meta property="og:description" content="{{ description }}">
-        <meta name="twitter:description" content="{{ description }}">
-    {% else %}
-        <meta name="description" content="{{ site.description }}">
-        <meta property="og:description" content="{{ site.description }}">
-        <meta name="twitter:description" content="{{ site.description }}">
-    {% endif %}
-    <meta property="og:url" content="{{site.url}}{{ page.url }}">
-    <meta property="og:image" content="/static/images/neolink.png">
+
+    <meta name="description" content="{%- if description -%}{{description}}{%- else -%}{{site.description}}{%- endif -%}">
+
     <link rel="shortcut icon" href="/static/favicon.png" type="image/x-icon">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
+    <link rel="author" href="humans.txt"/>
+
+    {# set open graph #}
+
+    <meta property="og:url" content="{{site.url}}{{ page.url }}">
+    <meta property="og:title" content="{%- if title -%}{{title}}{%- else -%}{{site.title}}{%- endif -%}">
+    <meta property="og:site_name" content="{{ site.title }}"/>
+    <meta property="og:description" content="{%- if description -%}{{description}}{%- else -%}{{site.description}}{%- endif -%}">
+    <meta property="og:image" content="{{site.neolink_image}}">
+    <meta property="og:locale" content="{{site.lang}}">
+    <meta property="article:author" content="{{ site.author.name }}"/>
+
     <meta name="generator" content="{{ eleventy.generator }}"/>
-    <style>
-        {% getBundle "css", "critical" %}
-    </style>
     {% css %}{% include "styles/index.css" %}{% endcss %}
-    <link rel="stylesheet" href="{% getBundleFileUrl 'css' %}">
+    <style>
+        {% getBundle "css" %}
+        {% if is_post %}
+            {% getBundle "css", "post" %}
+        {% endif %}
+    </style>
+    <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'parts' %}">
     {% if style_slot %}
         {% renderTemplate 'njk,md',
         slots %}
-        {{style_slot | safe}}
+        {{ style_slot | safe }}
         {% endrenderTemplate %}
     {% endif %}
 </head>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+  {% set is_system_page = true %}
+  {% css "system_page" %}{% include "styles/modules/system-module.css" %}{% endcss %}
   {% include "head.njk" %}
-  <body {% if body_classes %}
-    class="{{body_classes}}"
-  {% endif %}>
-    {% block layout %}
+  <body>
+    <main class="site-container content">
+      {% block layout %}
         {{ content | safe }}
-    {% endblock %}
+      {% endblock %}
+    </main>
   </body>
 </html>

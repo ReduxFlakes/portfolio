@@ -1,7 +1,8 @@
 ---
 title: Projects
-layout: page.njk
+layout: base.njk
 description: All of the projects I've created/worked on/contributed to.
+permalink: "/projects/"
 ---
 
 <ul class="cat-list">

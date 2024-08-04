@@ -1,0 +1,23 @@
+:root {
+  /* max size of the website */
+  --size-breakpoint: 900px;
+  /* spacing units */
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-s: 0.75rem;
+  --space-m: 1rem;
+
+  /* typography */
+  --base-font-family: system-ui, sans-serif;
+  --base-font-size: 1.1rem;
+
+  /* theme */
+  --background: #17142d;
+  --on-background: hsl(231, 100%, 95%);
+
+  --outline: rgba(255, 255, 255, 0.35);
+
+  --primary: rgb(109, 170, 255);
+
+  color-scheme: dark;
+}

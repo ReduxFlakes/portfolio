@@ -4,11 +4,13 @@ import markdownItFootnote from "markdown-it-footnote";
 import postcss from "postcss/lib/postcss";
 import htmlMin from "html-minifier-terser";
 import { EleventyRenderPlugin } from "@11ty/eleventy";
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import postcssConfig from "postcss-load-config";
 import filters from "./config/filters/index.js";
 
 export default async function (eleventyConfig) {
   /* plugins */
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addBundle("css", {
     transforms: [
@@ -28,10 +30,13 @@ export default async function (eleventyConfig) {
 
   /* collections */
   eleventyConfig.addCollection("blog", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/blog/posts/**/*.md");
+    return collectionApi.getFilteredByGlob("src/pages/blog/posts/**/*.md");
   });
   eleventyConfig.addCollection("opinions", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/opinions/posts/**/*.md");
+  });
+  eleventyConfig.addCollection("slashes", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/pages/slashes/*.md");
   });
 
   /* filters */

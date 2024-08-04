@@ -1,7 +1,8 @@
 ---
 title: Music
-layout: page.njk
+layout: base.njk
 description: See the music I am listening to
+permalink: "/music/"
 ---
 
 ## Last.fm history
