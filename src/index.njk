@@ -75,17 +75,20 @@ numberOfLatestPostsToShow: 3
 
 <h2>Favourite Websites!</h2>
 
-<p style="display:flex;flex-wrap:wrap;gap:var(--space-xxs);">
-    {% for button in buttons.buttons %}
-        <a href="{{button.url}}" title="{{button.title}}"><img src="/static/buttons/{{button.img}}" alt="{{button.title}} button" style="image-rendering:pixelated;"></a>
-    {% endfor %}
-</p>
+<details>
+    <summary>Click to load button grid</summary>
+    <p style="display:flex;flex-wrap:wrap;gap:var(--space-xxs);">
+        {% for button in buttons.buttons %}
+            <a href="{{button.url}}" title="{{button.title}}"><img src="/static/buttons/{{button.img}}" alt="{{button.title}} button" style="image-rendering:pixelated;" loading="lazy"></a>
+        {% endfor %}
+    </p>
+</details>
 
 <p>You can find more in my <a href="/bookmarks">bookmarks</a> page.</p>
 
 <p>You can also link my website if you like my work, just please make sure to save the image you want to use to your own website instead of <a href="https://simple.wikipedia.org/wiki/Hotlinking">hotlinking</a>.</p>
 
 <p style="display:flex;flex-wrap:wrap;gap:var(--space-xxs);">
-    <img src="/static/images/button-animated.gif" alt="ReduxFlakes 'reducc' animated button">
-    <img src="/static/images/button.png" alt="ReduxFlakes 'reducc' static button">
+    <img src="/static/images/button-animated.gif" alt="ReduxFlakes 'reducc' animated button" style="image-rendering:pixelated;">
+    <img src="/static/images/button.png" alt="ReduxFlakes 'reducc' static button" style="image-rendering:pixelated;">
 </p>
