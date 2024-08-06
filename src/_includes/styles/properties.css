@@ -9,9 +9,10 @@
   --space-xl: 1.5rem;
   --space-xxl: 1.75rem;
   /* typography */
-  --base-font-family: system-ui, "Inter", "Segoe UI", "Roboto", "Ubuntu",
-    "Helvetica", "Noto Sans", "Verdana", "Arial", sans-serif;
-  --heading-font-family: Times New Roman, serif;
+  --base-font-family: system-ui, "Segoe UI", "Roboto", "Ubuntu", "Cantarell",
+    "Noto Sans", "San Francisco", sans-serif;
+  --heading-font-family: "Bitstream Charter", "Sitka Text", Cambria,
+    Times New Roman, serif;
   --base-font-size: 1.1rem;
   /* color scheme */
   --background: #fffae9;
