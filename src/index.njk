@@ -1,10 +1,91 @@
---- 
+---
 title: "Home"
 layout: base.njk
+numberOfLatestPostsToShow: 3
 ---
 
-{% renderTemplate "md"%}
+{% set postsCount = collections.blog | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 
-# Under Construction
+<h1>ReduxFlakes</h1>
 
-{% endrenderTemplate%}
+<p>I'm a developer and designer from Portugal. Advocate for the open web, privacy & security, and accessibility. Learn more on my <a href="/about/">about page</a>.</p>
+
+<p>
+    <b>ATTENTION</b>: This website is still under construction!</p>
+
+<h2>Latest {{ latestPostsCount }} Blog Post{% if latestPostsCount != 1 %}s{% endif %}
+</h2>
+
+<ul>
+    {%- for post in collections.blog | reverse -%}
+        <li>
+            <a href="{{post.url}}">{{post.data.title}}</a> | <time datetime="{{post.date}}">{{post.date | formatPostDate }}</time>
+        </li>
+    {%- endfor -%}
+</ul>
+
+<p>More posts available at the <a href="/posts/">archive</a>.</p>
+
+<h2>Webrings</h2>
+
+<section>
+    <h3>
+        <a href="https://neossg.neocities.org/" style="color:var(--info)">NeoSSG 🌐</a>
+    </h3>
+    <div id="neossg">
+        <script src="https://neossg.neocities.org/onionring-variables.js" async></script>
+        <script src="https://neossg.neocities.org/onionring-widget.js" async></script>
+    </div>
+</section>
+<section>
+    <h3>
+        <a href="https://baccyflap.com/noai" style="color:var(--danger)">No AI ⛔</a>
+    </h3>
+    <p>
+        <a href="https://baccyflap.com/noai/?prv&s=rzr"> Previous</a>
+        <a href="https://baccyflap.com/noai/?rnd">Random</a>
+        <a href="https://baccyflap.com/noai/?nxt&s=rzr">Next</a>
+    </p>
+</section>
+<section>
+    <h3>
+        <a href="https://nuthead.neocities.org/ring/" style="color:var(--warning)">null webring 💽</a>
+    </h3>
+    <p style="display:flex;">
+        <script src="https://nuthead.neocities.org/ring/ring.js" ></script>
+    </p>
+</section>
+
+<h2>Popular Projects</h2>
+
+<ul>
+    <li>
+        <a href="https://surfscape.neocities.org">SurfScape</a> - An organization that builds minimal services, resources, and software related to privacy, security, and the open web.</li>
+    <li>
+        <a href="https://surfscape.neocities.org/community">Retro Space</a> - A Discord (more platform coming soon) community related to Neocities, tech, and OSM.</li>
+</ul>
+
+<p>Full list available on my <a href="/projects/">projects</a> page.</p>
+
+<h2>Recent Updates</h2>
+
+<p>
+    <i>06/08/2024</i> - Decided to go minimal since I wasn't getting any new ideas of layouts that suited my vibe, and since I want to make this website as easy to maintain as possible. At least I do have a lot more content for everyone to explore so go for it, mess around and find something that you like! reducc</p>
+
+<h2>Favourite Websites!</h2>
+
+<p style="display:flex;flex-wrap:wrap;gap:var(--space-xxs);">
+    {% for button in buttons.buttons %}
+        <a href="{{button.url}}" title="{{button.title}}"><img src="/static/buttons/{{button.img}}" alt="{{button.title}} button" style="image-rendering:pixelated;"></a>
+    {% endfor %}
+</p>
+
+<p>You can find more in my <a href="/bookmarks">bookmarks</a> page.</p>
+
+<p>You can also link my website if you like my work, just please make sure to save the image you want to use to your own website instead of <a href="https://simple.wikipedia.org/wiki/Hotlinking">hotlinking</a>.</p>
+
+<p style="display:flex;flex-wrap:wrap;gap:var(--space-xxs);">
+    <img src="/static/images/button-animated.gif" alt="ReduxFlakes 'reducc' animated button">
+    <img src="/static/images/button.png" alt="ReduxFlakes 'reducc' static button">
+</p>

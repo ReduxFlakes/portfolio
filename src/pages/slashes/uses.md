@@ -1,8 +1,8 @@
 ---
-title: Defaults
-description: 'AKA "Things I Use"'
+title: Uses
+description: Things I use daily
 layout: base.njk
-update: 2024-06-16T02:34:00
+update: 2024-08-06T01:44:00
 ---
 
 ## Hardware
@@ -14,7 +14,8 @@ update: 2024-06-16T02:34:00
 - 128 GB SDD (no cache 😪);
 - Full HD IPS Display (it's good enoguh but has some dead pixels 😐);
 
-Came with Windows 10 Pro Edu when I got it back in 2022. Since at the end of 2023 I have installed Windows 11 Pro which automatically updated to Pro Edu. I've removed all the bloatware and ran WinUtil to reduce RAM usage and set Windows Update for Security only, since then it's been actually great, it even runs smoothly with transparency at a zoom level of 100% (the default is 150%).
+Came with Windows 10 Pro Edu when I got it back in 2021~2. Since then I have installed Windows 11 Pro.
+I've removed all the bloatware and ran WinUtil to reduce RAM usage and set Windows Update for Security only. It's been great, it even runs smoothly with transparency at a zoom level of 100% (the default is 150%).
 
 ### Smartphone
 
@@ -22,6 +23,7 @@ Came with Windows 10 Pro Edu when I got it back in 2022. Since at the end of 202
 - 128 GB/8 GB model;
 - Snapdragon 778G;
 - Currently with a 1 SIM, 1 SD Card (64 GB) setup;
+- [LineageOS](https://lineageos.org/) 21
 
 Came with MIUI 12 by default, since then I probably had more than 30 custom ROMs flashed onto it. ~~Currently running HyperOS China Stable port, rooted and minimal debloated, also comes with AOSP installer instead of the horrendous Xiaomi one. I've also set a custom NextDNS profile for it to block trackers (mainly from Google and Xiaomi).~~
 
@@ -35,7 +37,7 @@ My most used apps are on the [mobile software](#android) section if you want to 
 
 ### Windows
 
-- Browsers: Firefox (main), ~~Vivaldi (main before May of 2024), Arc (school only)~~ (I now only use Firefox and Ungoogled Chromium for School)
+- Browsers: LibreWolf (main, used Firefox before). ~~Vivaldi (main before May of 2024), Arc (school only)~~ (I now only use LibreWolf and Ungoogled Chromium for School)
   **Extensions:**
 - Bitwarden
 - uBlock Origin
@@ -44,15 +46,18 @@ My most used apps are on the [mobile software](#android) section if you want to 
 - Unhook
 - SponsorBlock
 - Return YouTube Dislike
+- Windscribe
+- Tampermonkey
 
 ---
 
 - Code Editor(s) & IDE(s): Visual Studio Code, Android Studio, IDEA IntelliJ
 - Other coding stuff:
   - [Bun](https://bun.sh/) (I love it!)
+  - [pnpm]()
   - Python
-  - Windows Terminal
-  - Git and GitHub Cli
+  - Windows Terminal (with Powershell 7)
+  - Git, GitHub Cli, and GitHub Desktop
 - Customization:
   - PowerToys
   - WinToys
@@ -60,11 +65,11 @@ My most used apps are on the [mobile software](#android) section if you want to 
 
 ### Android
 
-- Browser: Fennec (F-Droid)
+- Browser: Firefox Beta (with tweaks and uBlock)
 - System utilities:
   - App Manager (one of the best apps for a rooted android phone)
-- Poweramp (music player with support for Hi-Res)
-- ~~YouTube (lazy to switch to modded YouTube)~~ Full time NewPipe!
+- ~~Poweramp (music player with support for Hi-Res)~~ I'm currently using Spotify and for relaxing CDs and Vinyl.
+- ~~YouTube (lazy to switch to modded YouTube). Full time NewPipe!~~ I've since moved to [GrayJay](https://grayjay.app/) which is realy awesome!
 - AudioRelay (since the audio card on my laptop died 😔)
 - Magisk Modules
   - Viper4Android (transforms a nugget earphone into a _beast_)

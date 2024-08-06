@@ -1,19 +1,17 @@
 ---
-title: Blog
-layout: base.njk
-description: Ramblings, lifestyle and programming.
+title: Archive
+layout: page.njk
+description: My blog of ramblings, programming, privacy, and lifestyle.
 permalink: "/posts/"
 ---
 
-# Blog
+This blog contains <b><a href="/posts/tags/">tags</a></b> for easier search of information.
 
-{{description}}
-
-{%- for post in collections.blog | reverse -%}
-<a class="post-listing__item" href="{{post.url}}">
-
-<h2>{{post.data.title}} - <small> <time datetime="{{ date }}">{{post.data.date | formatPostDate }}</time></small></h2>
-<p>{{post.data.description}}</p>
-
-</a>
-{%- endfor -%}
+<ul>
+    {%- for post in collections.blog | reverse -%}
+        <li>
+            <a href="{{post.url}}">{{post.data.title}}</a> | <time datetime="{{post.date}}">{{post.date | formatPostDate }}</time>
+            <p>{{post.data.description}}</p>
+        </li>
+    {%- endfor -%}
+</ul>

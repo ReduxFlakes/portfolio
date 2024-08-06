@@ -13,6 +13,9 @@ export default {
   dateToISO: (date) => {
     return new Date(date).toISOString();
   },
+  min: (...numbers) => {
+    return Math.min.apply(null, numbers);
+  },
   cssmin: (code) => {
     return new CleanCSS({}).minify(code).styles;
   },

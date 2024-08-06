@@ -1,13 +1,15 @@
 {% extends "./base.njk" %}
 
 {% block base %}
-    <main id="main-content" class="flow">
-        <header class="page-meta">
-            <h1>{{title}}</h1>
-            <p>{{description}}</p>
-        </header>
-        <article class="flow">
-            {{ content | safe }}
-        </article>
-    </main>
+    <header>
+        <h1>{{title}}</h1>
+        <p>{{description}}</p>
+        {% if modified %}
+            <p>Last updated in: <time datetime="{{modified}}">{{ modified | formatPostDate }}</time>
+            </p>
+        {% endif %}
+    </header>
+    <article class="flow">
+        {{ content | safe }}
+    </article>
 {% endblock %}

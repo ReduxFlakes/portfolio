@@ -1,8 +1,4 @@
-{% css "parts" %}
-{% include "../styles/partials/footer.css" %}
-{% endcss %}
-
-<footer class="site-footer flow">
+<footer>
   <iframe
       src="//incr.easrng.net/badge?key=reduxflakes"
       style="background: url(//incr.easrng.net/bg.gif)"
@@ -10,46 +6,13 @@
       width="88"
       height="31"
     ></iframe>
-  <div class="site-footer-webrings">
-    <div id="neossg">
-      <script
-      src="https://neossg.neocities.org/onionring-variables.js" async
-    ></script>
-      <script
-      src="https://neossg.neocities.org/onionring-widget.js" async
-    ></script>
-    </div>
-    <div class="webring">
-      <a href="https://hotlinewebring.club/reduxflakes/previous">Prev</a>
-      <a href="https://hotlinewebring.club/">Hotline</a>
-      <a href="https://hotlinewebring.club/reduxflakes/next">Next</a>
-    </div>
-    <div class="webring">
-      <a href="https://loop.graycot.dev/webring.html?action=prev"> &#8592;</a>
-      <a href="https://loop.graycot.dev/webring.html?action=home">Loop Ring</a>
-      <a href="https://loop.graycot.dev/webring.html?action=next"> &#8594; </a>
-    </div>
-    <div class="webring">
-      <a href="https://webring.dinhe.net/prev/reduxflakes.neocities.org">
-      &#8592;
-    </a>
-      <a href="https://webring.dinhe.net">Retronaut</a>
-      <a href="https://webring.dinhe.net/next/reduxflakes.neocities.org">
-      &#8594;
-    </a>
-    </div>
-    <div style="display: flex">
-      <script src="https://nuthead.neocities.org/ring/ring.js" async></script>
-    </div>
-  </div>
-  <p style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.5em;">
-    {% for social in socials.social %}
-      <a class="social--link" href="{{social.link}}" title="{{social.name}}">
-        {{social.name}}
-      </a>
-    {% endfor %}
+  <p>
+    <small>
+      <a href="/privacy">Privacy Statement</a> - <a href="/privacy">Accessibility Statement</a> - <a href="/humans.txt">humans.txt</a>
+    </small>
   </p>
-  <p style="text-align:center;">&copy; 2021 - 2024 ReduxFlakes - <a href="/privacy">Privacy Statement</a>
+  <p>
+    <small>
+  &copy; 2021 - 2024 ReduxFlakes</small>
   </p>
-  <p style="text-align:center;">{{site.description}}</p>
 </footer>

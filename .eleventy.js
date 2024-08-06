@@ -32,9 +32,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection("blog", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/pages/blog/posts/**/*.md");
   });
-  eleventyConfig.addCollection("opinions", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/opinions/posts/**/*.md");
-  });
   eleventyConfig.addCollection("slashes", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/pages/slashes/*.md");
   });

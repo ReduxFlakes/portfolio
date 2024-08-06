@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{site.lang}}">
   {% include "head.njk" %}
-  <body>
-    {% include "partials/header.njk" %}
-    {% block base %}
-      <main id="main-content" class="flow">
+  <body class="flow">
+    {% include "partials/topnav.njk" %}
+    <main id="main-content" class="flow">
+      {% block base %}
         {{ content | safe }}
-      </main>
-    {% endblock %}
-    {% include "partials/aside.njk" %}
+      {% endblock %}
+    </main>
+    {% include "partials/nav.njk" %}
     {% include "partials/footer.njk" %}
     <script
       data-goatcounter="https://reduxflakes.goatcounter.com/count"
