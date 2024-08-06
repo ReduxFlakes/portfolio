@@ -1,6 +1,5 @@
 ---
 title: About
-layout: page.njk
 description: About me, the webmaster
 permalink: "/about/"
 ---

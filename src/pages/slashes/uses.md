@@ -1,7 +1,7 @@
 ---
 title: Uses
 description: Things I use daily
-layout: base.njk
+permalink: "/uses/"
 update: 2024-08-06T01:44:00
 ---
 
@@ -37,24 +37,26 @@ My most used apps are on the [mobile software](#android) section if you want to 
 
 ### Windows
 
-- Browsers: LibreWolf (main, used Firefox before). ~~Vivaldi (main before May of 2024), Arc (school only)~~ (I now only use LibreWolf and Ungoogled Chromium for School)
-  **Extensions:**
-- Bitwarden
+- Browsers: LibreWolf (main), Thorium (school)
+
+**Extensions:**
+
 - uBlock Origin
+- Bitwarden
 - Decentraleyes
 - Sidebery for tabs on the side (similar to Vivaldi and Arc but better 👌)
+- Tampermonkey
+- Windscribe
 - Unhook
 - SponsorBlock
 - Return YouTube Dislike
-- Windscribe
-- Tampermonkey
 
 ---
 
 - Code Editor(s) & IDE(s): Visual Studio Code, Android Studio, IDEA IntelliJ
 - Other coding stuff:
   - [Bun](https://bun.sh/) (I love it!)
-  - [pnpm]()
+  - [pnpm](https://pnpm.io/)
   - Python
   - Windows Terminal (with Powershell 7)
   - Git, GitHub Cli, and GitHub Desktop
@@ -65,20 +67,22 @@ My most used apps are on the [mobile software](#android) section if you want to 
 
 ### Android
 
-- Browser: Firefox Beta (with tweaks and uBlock)
+- Browser: Firefox Beta (with some tweaks and uBlock Origin)
+- Spotify (and for relaxing CDs and Vinyl).
+- [GrayJay](https://grayjay.app/) for YouTube
 - System utilities:
   - App Manager (one of the best apps for a rooted android phone)
-- ~~Poweramp (music player with support for Hi-Res)~~ I'm currently using Spotify and for relaxing CDs and Vinyl.
-- ~~YouTube (lazy to switch to modded YouTube). Full time NewPipe!~~ I've since moved to [GrayJay](https://grayjay.app/) which is realy awesome!
 - AudioRelay (since the audio card on my laptop died 😔)
 - Magisk Modules
   - Viper4Android (transforms a nugget earphone into a _beast_)
 
 ### Services
 
-This are web services that I use, they are most likely installed on both my laptop and mobile so that's why they are not included in the lists above.
+This are services that I use these include web services like my e-mail and cloud provider but also other apps that I use on both my PC and Mobile which is why they are listed here.
 
-- Figma (for design)
+- Proton (I only care about e-mail though)
+- Disroot (had an account for some time now but I've only been using it recently)
 - Bitwarden (password manager)
-- Mega (cloud storage - E2EE)
 - Obsidian (with Mega for sync)
+- Mega (cloud storage - E2EE)
+- Figma (for design and mockups)

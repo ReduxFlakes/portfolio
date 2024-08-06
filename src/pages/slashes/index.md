@@ -1,8 +1,6 @@
 ---
 title: Slashes
-layout: page.njk
 permalink: "/slashes/"
-eleventyExcludeFromCollections: true
 ---
 
 Idea taken from: [https://slashpages.net/](https://slashpages.net/) .
