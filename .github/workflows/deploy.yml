@@ -26,7 +26,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: website-artifacts
-          path: _dist
+          path: _site
 
   deploy:
     runs-on: ubuntu-latest
@@ -38,7 +38,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: website-artifacts
-          path: _dist
+          path: _site
       - name: List contents of the working directory
         run: ls -al
       - name: Deploy to neocities
@@ -46,4 +46,4 @@ jobs:
         with:
           api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
           cleanup: true
-          dist_dir: _dist
+          dist_dir: _site
