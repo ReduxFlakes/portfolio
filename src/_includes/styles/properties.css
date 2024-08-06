@@ -21,6 +21,7 @@
   --danger: hsl(352, 72%, 42%);
   --info: rgb(19, 49, 184);
   --warning: #d59010;
+  --success: rgb(12, 164, 12);
   color-scheme: dark;
 }
 
@@ -32,5 +33,6 @@
     --danger: hsl(352, 100%, 73%);
     --info: rgb(83, 111, 235);
     --warning: #fec358;
+    --success: rgb(111, 236, 111);
   }
 }
