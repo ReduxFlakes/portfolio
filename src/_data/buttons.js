@@ -76,15 +76,5 @@ export default {
       url: "https://neo-neighborhoods.neocities.org/",
       img: "neobutton.gif",
     },
-    {
-      title: "concon.soy",
-      url: "https://concon.soy/",
-      img: "conconbutton.gif",
-    },
-    {
-      title: "lime360",
-      url: "https://lime360.neocities.org",
-      img: "lime360.png",
-    },
   ],
 };
