@@ -20,7 +20,7 @@
   --primary: hsl(313, 82%, 37%);
   --danger: hsl(352, 72%, 42%);
   --info: rgb(19, 49, 184);
-  --warning: #d59010;
+  --warning: #c88404;
   --success: rgb(12, 164, 12);
   color-scheme: dark;
 }
