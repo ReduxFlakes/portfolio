@@ -82,7 +82,7 @@ numberOfLatestPostsToShow: 3
 <h2>Recent Updates</h2>
 
 <p>
-    <i>06/08/2024</i> - Decided to go minimal since I wasn't getting any new ideas of layouts that suited my vibe, and since I want to make this website as easy to maintain as possible. At least I do have a lot more content for everyone to explore so go for it, mess around and find something that you like! reducc</p>
+    <i>08/08/2024</i> - New post, removal of telemetry, some performance and accessibility improvements</p>
 
 <h2>Favourite Websites!</h2>
 
@@ -90,7 +90,7 @@ numberOfLatestPostsToShow: 3
     <summary>Click to load button grid</summary>
     <p style="display:flex;flex-wrap:wrap;gap:var(--space-xxs);">
         {% for button in buttons.buttons %}
-            <a href="{{button.url}}" title="{{button.title}}"><img src="/static/buttons/{{button.img}}" alt="{{button.title}} button" style="image-rendering:pixelated;" loading="lazy"></a>
+            <a href="{{button.url}}" title="{{button.title}}"><img src="/static/buttons/{{button.img}}" alt="{{button.title}} button" style="image-rendering:pixelated;" loading="lazy" width="88px" height="31px"></a>
         {% endfor %}
     </p>
 </details>
@@ -100,6 +100,6 @@ numberOfLatestPostsToShow: 3
 <p>You can also link my website if you like my work, just please make sure to save the image you want to use to your own website instead of <a href="https://simple.wikipedia.org/wiki/Hotlinking">hotlinking</a>.</p>
 
 <p style="display:flex;flex-wrap:wrap;gap:var(--space-xxs);">
-    <img src="/static/images/button-animated.gif" alt="ReduxFlakes 'reducc' animated button" style="image-rendering:pixelated;">
-    <img src="/static/images/button.png" alt="ReduxFlakes 'reducc' static button" style="image-rendering:pixelated;">
+    <img src="/static/images/button-animated.gif" alt="ReduxFlakes 'reducc' animated button" style="image-rendering:pixelated;" width="88px" height="31px">
+    <img src="/static/images/button.png" alt="ReduxFlakes 'reducc' static button" style="image-rendering:pixelated;" width="88px" height="31px">
 </p>
