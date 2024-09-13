@@ -1,8 +1,8 @@
 ---
 title: Uses
-description: Things I use daily
+description: Things I use daily (and stuff I have)
 permalink: "/uses/"
-update: 2024-08-06T01:44:00
+update: 2024-09-13T03:06:00
 ---
 
 ## Hardware
@@ -10,12 +10,11 @@ update: 2024-08-06T01:44:00
 ### School Laptop
 
 - Intel i3 10110U 2.10 GHz (Turbo up to 4.10 GHz);
-- 8 GB of RAM (single channel 😔);
-- 128 GB SDD (no cache 😪);
-- Full HD IPS Display (it's good enoguh but has some dead pixels 😐);
+- 8 GB of RAM
+- 128 GB SDD
+- Full HD IPS Display
 
-Came with Windows 10 Pro Edu when I got it back in 2021~2. Since then I have installed Windows 11 Pro.
-I've removed all the bloatware and ran WinUtil to reduce RAM usage and set Windows Update for Security only. It's been great, it even runs smoothly with transparency at a zoom level of 100% (the default is 150%).
+Came with Windows 10 Pro Edu when I got it back in 2021~2. Since then I have installed ~~Windows 11 Pro~~ Windows 10 IoT Enterprise LTSC, runs fantastic!
 
 ### Smartphone
 
@@ -33,11 +32,17 @@ Came with MIUI 12 by default, since then I probably had more than 30 custom ROMs
 
 My most used apps are on the [mobile software](#android) section if you want to know about it.
 
+### PS2 Slim (SCPH-700xx)
+
+Just a few days ago I got a used PS2 Slim (I never had a home console, only getting a PSP as a child), the pack came with a Logitech Action controller, a few games without case, a EyeToy camera and even the original manuals, the console itself was pretty new and the deal was just 40€, since then I've been playing the crap out of it, mostly Gran Turismo 4, V-Rally 3, and Burnout Revenge.
+I got 5 used games after purchasing the PS2, those being GT4, GTA VC (needs polishing though), Burnout Revenge, V-Rally 3, and Just Cause, I also got a 8MB official Memory Stick card since I didn't have one.
+Haven't got the time to mod it yet but I'm mostly going with FreeMcBoot.
+
 ## Software
 
 ### Windows
 
-- Browsers: LibreWolf (main), Thorium (school)
+- Browsers: LibreWolf (main), got back to Vivaldi but still deciding...
 
 **Extensions:**
 
@@ -45,29 +50,26 @@ My most used apps are on the [mobile software](#android) section if you want to 
 - Bitwarden
 - Decentraleyes
 - Sidebery for tabs on the side (similar to Vivaldi and Arc but better 👌)
-- Tampermonkey
-- Windscribe
 - Unhook
 - SponsorBlock
 - Return YouTube Dislike
+- DeArrow
 
 ---
 
 - Code Editor(s) & IDE(s): Visual Studio Code, Android Studio, IDEA IntelliJ
 - Other coding stuff:
-  - [Bun](https://bun.sh/) (I love it!)
+  - ~~[Bun](https://bun.sh/) (I love it!)~~
   - [pnpm](https://pnpm.io/)
   - Python
   - Windows Terminal (with Powershell 7)
-  - Git, GitHub Cli, and GitHub Desktop
+  - Git
 - Customization:
   - PowerToys
-  - WinToys
-  - WinUtil
 
 ### Android
 
-- Browser: Firefox Beta (with some tweaks and uBlock Origin)
+- Browser: ~~Firefox Beta (with some tweaks and uBlock Origin)~~ Moved back to Mull and uBlock.
 - Spotify (and for relaxing CDs and Vinyl).
 - [GrayJay](https://grayjay.app/) for YouTube
 - System utilities:
@@ -86,3 +88,4 @@ This are services that I use these include web services like my e-mail and cloud
 - Obsidian (with Mega for sync)
 - Mega (cloud storage - E2EE)
 - Figma (for design and mockups)
+- Neocities (for hosting this website and [SurfScape](https://surfscape.neocities.org))
