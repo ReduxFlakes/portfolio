@@ -1,6 +1,6 @@
 ---
 title: Going back to Lineage OS
-date: 2024-06-06T19:10:48.000Z
+date: 2024-06-06T19:10:48
 description: Degoogling my phone and going back to Lineage OS.
 ---
 
