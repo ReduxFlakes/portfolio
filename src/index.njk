@@ -1,7 +1,7 @@
 ---
 title: "Home"
 layout: base.njk
-numberOfLatestPostsToShow: 3
+numberOfLatestPostsToShow: 2
 ---
 
 {% set postsCount = collections.blog | length %}
@@ -19,13 +19,21 @@ numberOfLatestPostsToShow: 3
 
 <ul>
     {%- for post in collections.blog | reverse -%}
-        <li>
-            <a href="{{post.url}}">{{post.data.title}}</a> | <time datetime="{{post.date}}">{{post.date | formatPostDate }}</time>
-        </li>
+        {% if loop.index0 < numberOfLatestPostsToShow %}
+            <li>
+                <a href="{{post.url}}">{{post.data.title}}</a> | <time datetime="{{post.date}}">{{post.date | formatPostDate }}</time>
+            </li>
+        {% endif %}
     {%- endfor -%}
 </ul>
 
-<p>More posts available at the <a href="/posts/">archive</a>.</p>
+<p>All posts are available at the <a href="/posts/">archive</a>.</p>
+
+<h2>Latest Update</h2>
+
+<p>
+    <i>13/09/2024</i> - Minor cleaning and improvements, and major update to <a href="/uses/">/uses</a>.
+</p>
 
 <h2>Webrings</h2>
 
@@ -50,17 +58,6 @@ numberOfLatestPostsToShow: 3
 </section>
 <section>
     <h3>
-        <a href="https://fediring.net/" style="color:var(--success)">Fediring 🚪</a>
-    </h3>
-    <p>
-        <a href="https://fediring.net/previous?host=reduxflakes.neocities.org">←</a>
-        <a href="https://fediring.net/">Random</a>
-        <a href="https://fediring.net/next?host=reduxflakes.neocities.org">→</a>
-    </p>
-</section>
-
-<section>
-    <h3>
         <a href="https://nuthead.neocities.org/ring/" style="color:var(--warning)">null webring 💽</a>
     </h3>
     <p style="display:flex;">
@@ -72,17 +69,14 @@ numberOfLatestPostsToShow: 3
 
 <ul>
     <li>
-        <a href="https://surfscape.neocities.org">SurfScape</a> - An organization that builds minimal services, resources, and software related to privacy, security, and the open web.</li>
+        <a href="https://surfscape.neocities.org">SurfScape</a> - Project focused on collecting resources on web building and digital privacy & minimalism. Also offers free servics like a directory of websites. Closed at the moment.</li>
     <li>
-        <a href="https://surfscape.neocities.org/community">Retro Space</a> - A Discord (more platform coming soon) community related to Neocities, tech, and OSM.</li>
+        <a href="https://surfscape.neocities.org/community">Retro Space</a> - A Discord community (Revolt bridge coming soon) related to Neocities, tech, and OSM (Operating System Mockups).</li>
 </ul>
 
-<p>Full list available on my <a href="/projects/">projects</a> page.</p>
-
-<h2>Recent Updates</h2>
-
 <p>
-    <i>08/08/2024</i> - New post, removal of telemetry, some performance and accessibility improvements</p>
+    <s>See more projects at the <a href="/projects/">projects</a> page.</s>
+</p>
 
 <h2>Favourite Websites!</h2>
 
