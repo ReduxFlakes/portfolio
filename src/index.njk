@@ -4,15 +4,50 @@ layout: base.njk
 numberOfLatestPostsToShow: 2
 ---
 
+<div class="hero">
+    <section class="hero-content flow">
+        <h1 class="display">Hi, I'm Redux <small style="font-size:1.25rem;color:var(--on-background);font-weight:400;opacity:0.8;">(he/him/them)</small>
+        </h1>
+        <p>An <small>(almost)</small> full stack developer from Portugal that works with web, desktop, Android, design, and a bit of networking and sound.</p>
+        <nav class="social-links">
+            <a href="mailto:" class="btn btn--fancy">Mail me!</a>
+            <a href="https://github.com/reduxflakes" class="btn btn--icon"><img src="/static/icons/github.svg" alt="GitHub Logo"></a>
+            <a href="https://fosstodon.org/@redux" class="btn btn--icon" rel="me"><img src="/static/icons/mastodon.svg" alt="Mastodon Logo"></a>
+            <a href="https://youtube.com/@reduxflakes" class="btn btn--icon"><img src="/static/icons/youtube.svg" alt="YouTube Logo"></a>
+            <a href="https://dribbble.com/reduxflakes" class="btn btn--icon"><img src="/static/icons/dribbble.svg" alt="Dribbble Logo"></a>
+            <a href="https://discord.gg/dY4GSudRxv" class="btn btn--icon"><img src="/static/icons/discord.svg" alt="Discord logo"></a>
+        </nav>
+    </section>
+</div>
+
+<h2>Stack</h2>
+<small>Ordered by experience and knowledge (best to worst)</small>
+<div class="auto-grid" style="--auto-grid-min-size:4.5rem;">
+    {% for item in stack.stack %}
+        <span class="stack-item">
+            <img src="/static/icons/{{item.icon}}.svg" alt="{{item.title}} icon">
+            <small>{{item.title}}</small>
+        </span>
+    {% endfor %}
+</div>
+
+<details open>
+    <summary>Things I like/hate</summary>
+    <section class="details-content">
+        <h3>I like</h3>
+        <ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+    </section>
+
+</details>
+
 {% set postsCount = collections.blog | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-
-<h1>ReduxFlakes</h1>
-
-<p>I'm a developer and designer from Portugal. Advocate for the open web, privacy & security, and accessibility. Learn more on my <a href="/about/">about page</a>.</p>
-
-<p>
-    <b>ATTENTION</b>: This website is still under construction!</p>
 
 <h2>Latest {{ latestPostsCount }} Blog Post{% if latestPostsCount != 1 %}s{% endif %}
 </h2>
@@ -28,12 +63,6 @@ numberOfLatestPostsToShow: 2
 </ul>
 
 <p>All posts are available at the <a href="/posts/">archive</a>.</p>
-
-<h2>Latest Update</h2>
-
-<p>
-    <i>13/09/2024</i> - Minor cleaning and improvements, and major update to <a href="/uses/">/uses</a>.
-</p>
 
 <h2>Webrings</h2>
 
@@ -65,24 +94,11 @@ numberOfLatestPostsToShow: 2
     </p>
 </section>
 
-<h2>Popular Projects</h2>
-
-<ul>
-    <li>
-        <a href="https://surfscape.neocities.org">SurfScape</a> - Project focused on collecting resources on web building and digital privacy & minimalism. Also offers free servics like a directory of websites. Closed at the moment.</li>
-    <li>
-        <a href="https://surfscape.neocities.org/community">Retro Space</a> - A Discord community (Revolt bridge coming soon) related to Neocities, tech, and OSM (Operating System Mockups).</li>
-</ul>
-
-<p>
-    <s>See more projects at the <a href="/projects/">projects</a> page.</s>
-</p>
-
 <h2>Favourite Websites!</h2>
 
 <details>
     <summary>Click to load button grid</summary>
-    <p style="display:flex;flex-wrap:wrap;gap:var(--space-xxs);">
+    <p style="display:flex;flex-wrap:wrap;gap:var(--space-xxs);" class="details-content">
         {% for button in buttons.buttons %}
             <a href="{{button.url}}" title="{{button.title}}"><img src="/static/buttons/{{button.img}}" alt="{{button.title}} button" style="image-rendering:pixelated;" loading="lazy" width="88px" height="31px"></a>
         {% endfor %}

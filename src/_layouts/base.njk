@@ -2,13 +2,12 @@
 <html lang="{{site.lang}}">
   {% include "head.njk" %}
   <body class="flow">
-    {% include "partials/topnav.njk" %}
+    {% include "partials/header.njk" %}
     <main id="main-content" class="flow">
       {% block base %}
         {{ content | safe }}
       {% endblock %}
     </main>
-    {% include "partials/nav.njk" %}
     {% include "partials/footer.njk" %}
   </body>
 </html>

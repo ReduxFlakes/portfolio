@@ -1,0 +1,8 @@
+<header class="app-header">
+    <a href="/" class="app-header__pilot">{{site.title}}</a>
+    <nav class="app-navigation">
+        {% for item in nav.headernav %}
+            <a class="app-navigation__link" href="{{item.url}}">{{item.title}}</a>
+        {% endfor %}
+    </nav>
+</header>

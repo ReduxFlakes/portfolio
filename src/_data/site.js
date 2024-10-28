@@ -1,6 +1,6 @@
 export default {
   title: "ReduxFlakes",
-  description: "Fireplace in the mall",
+  description: "Full stack developer from Portugal and advocate for privacy.",
   url: "https://reduxflakes.neocities.org",
   lang: "en",
   neolink_image: "/static/images/neolink.png",
