@@ -72,6 +72,10 @@ h6 {
   font-weight: 700;
 }
 
+small {
+  opacity: 0.8;
+}
+
 strong,
 b {
   font-weight: bold;
@@ -109,33 +113,26 @@ a:hover {
 
 .app-navigation__link {
   padding: 0.3em 0.7em;
-  text-decoration: none;
   color: var(--on-background);
-  border-radius: 32px;
-  transition: 150ms all ease-in-out;
+  text-decoration: none;
+  transition: 125ms all ease-in-out;
+  transition-duration: 1000ms;
 }
 
 .app-navigation__link:hover {
-  box-shadow: inset 0px 2px 4px 0px rgba(255, 255, 255, 0.25);
-  background: #1f1f1f;
+  color: var(--primary);
+  transition-duration: 125ms;
 }
 
 .flow > * + * {
   --_flow-space: var(--flow-space, 1em);
   margin-top: var(--_flow-space);
 }
-.topnav,
-.navbar-list {
-  display: flex;
-  gap: var(--space-s);
-  flex-wrap: wrap;
-}
 
 details {
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 0.5rem;
   background: #241822;
-  transition: 125ms ease-in-out all;
 }
 
 details > summary::before {

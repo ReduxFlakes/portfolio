@@ -41,16 +41,21 @@ export default {
       title: "Git",
     },
     {
-      icon: "java",
-      title: "Java",
-    },
-    {
       icon: "archlinux",
       title: "Arch Linux",
     },
     {
       icon: "c-language",
       title: "C",
+    },
+    {
+      icon: "java",
+      title: "Java",
+    },
+
+    {
+      icon: "python",
+      title: "Python",
     },
     {
       icon: "unity",

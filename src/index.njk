@@ -10,15 +10,18 @@ numberOfLatestPostsToShow: 2
         </h1>
         <p>An <small>(almost)</small> full stack developer from Portugal that works with web, desktop, Android, design, and a bit of networking and sound.</p>
         <nav class="social-links">
-            <a href="mailto:" class="btn btn--fancy">Mail me!</a>
-            <a href="https://github.com/reduxflakes" class="btn btn--icon"><img src="/static/icons/github.svg" alt="GitHub Logo"></a>
-            <a href="https://fosstodon.org/@redux" class="btn btn--icon" rel="me"><img src="/static/icons/mastodon.svg" alt="Mastodon Logo"></a>
-            <a href="https://youtube.com/@reduxflakes" class="btn btn--icon"><img src="/static/icons/youtube.svg" alt="YouTube Logo"></a>
-            <a href="https://dribbble.com/reduxflakes" class="btn btn--icon"><img src="/static/icons/dribbble.svg" alt="Dribbble Logo"></a>
-            <a href="https://discord.gg/dY4GSudRxv" class="btn btn--icon"><img src="/static/icons/discord.svg" alt="Discord logo"></a>
+            <a href="mailto:reduxflakes@disroot.org" class="btn-fancy">Mail me!</a>
+            <a href="https://github.com/reduxflakes" class="btn-icon"><img src="/static/icons/github.svg" alt="GitHub Logo"></a>
+            <a href="https://fosstodon.org/@redux" class="btn-icon" rel="me"><img src="/static/icons/mastodon.svg" alt="Mastodon Logo"></a>
+            <a href="https://youtube.com/@reduxflakes" class="btn-icon"><img src="/static/icons/youtube.svg" alt="YouTube Logo"></a>
+            <a href="https://dribbble.com/reduxflakes" class="btn-icon"><img src="/static/icons/dribbble.svg" alt="Dribbble Logo"></a>
+            <a href="https://discord.gg/dY4GSudRxv" class="btn-icon"><img src="/static/icons/discord.svg" alt="Discord logo"></a>
         </nav>
     </section>
 </div>
+
+<p>
+    <b style="color:orange;">Warning</b>: Site still in construction!</p>
 
 <h2>Stack</h2>
 <small>Ordered by experience and knowledge (best to worst)</small>
@@ -31,20 +34,95 @@ numberOfLatestPostsToShow: 2
     {% endfor %}
 </div>
 
-<details open>
-    <summary>Things I like/hate</summary>
-    <section class="details-content">
-        <h3>I like</h3>
-        <ul>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
+<details>
+    <summary>Personal Taste/Hate</summary>
+    <article class="auto-grid details-content">
+        <section>
+            <h3>I like</h3>
+            <ul>
+                <li>Privacy</li>
+                <li>Open Source</li>
+                <li>Pink/Purple</li>
+                <li>Minimalism</li>
+                <li>Design</li>
+                <ul>
+                    <li>Frutiger Aero</li>
+                    <li>2000's web design</li>
+                    <li>Modern Design <small>(Vercel type sh!t)</small>
+                    </li>
+                </ul>
+                <li>Music</li>
+                <ul>
+                    <li>Red Hot Chilli Peppers</li>
+                    <li>Iron Maiden</li>
+                    <li>R.E.M.</li>
+                    <li>Pink Floyd</li>
+                    <li>The Smiths</li>
+                    <li>Megadeth</li>
+                    <li>Judas Priest</li>
+                    <li>Pearl Jam</li>
+                    <li>Scorpions</li>
+                    <li>Men at Work</li>
+                    <li>More in <a href="https://www.last.fm/user/ReduxFlakes">last.fm</a>.</li>
+                </ul>
+                <li>Gaming</li>
+                <ul>
+                    <li>Team Fortress 2</li>
+                    <li>Portal</li>
+                    <li>Half-Life</li>
+                    <li>FlatOut 2</li>
+                    <li>V-Rally 2</li>
+                    <li>GTA IV</li>
+                </ul>
         </ul>
     </section>
+    <section>
+        <h3>I hate</h3>
+        <ul>
+            <li>Most AIs/LLMs</li>
+            <li>GAFAM</li>
+            <li>Most comercial pop</li>
+            <li>Tech bros</li>
+            <li>IA Hackers</li>
+            <li>Anything with IoT in the name</li>
+            <li>Apple fanboys</li>
+            <li>Phonk</li>
+            <li>TikTok</li>
+            <li>Discord <small>(can't delete though)</small>
+            <li>Live services <small>(mostly streaming services and Epic Games)</small>
+            <li>Gaming</li>
+            <ul>
+                <li>EA</li>
+                <li>UbiSoft</li>
+                <li>Activision</li>
+                <li>Rockstar Games</li>
+                <li>Blizzard</li>
+            </ul>
+        </li>
+    </li>
+</ul>
+</section>
+</article>
 
 </details>
+
+<h2>Popular projects</h2>
+
+<div class="auto-grid">
+
+<section class="card">
+<h3>SurfScape</h3>
+<ul class="card-stack-list">
+<li><img src="/static/icons/eleventy-text.svg" alt="11ty icon">Eleventy</li>
+</ul>
+<p>Project focused on creating resources and developing software around privacy and censorship.</p>
+<span style="display:flex;gap:0.5rem;">
+<a href="https://surfscape.neocities.org" class="btn">Access</a>
+<a href="https://github.com/surfscape" class="btn-icon"><img src="/static/icons/github.svg" alt="GitHub Icon"></a>
+</span>
+</section>
+
+</div>
 
 {% set postsCount = collections.blog | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
@@ -53,13 +131,13 @@ numberOfLatestPostsToShow: 2
 </h2>
 
 <ul>
-    {%- for post in collections.blog | reverse -%}
-        {% if loop.index0 < numberOfLatestPostsToShow %}
-            <li>
-                <a href="{{post.url}}">{{post.data.title}}</a> | <time datetime="{{post.date}}">{{post.date | formatPostDate }}</time>
-            </li>
-        {% endif %}
-    {%- endfor -%}
+{%- for post in collections.blog | reverse -%}
+{% if loop.index0 < numberOfLatestPostsToShow %}
+<li>
+    <a href="{{post.url}}">{{post.data.title}}</a> | <time datetime="{{post.date}}">{{post.date | formatPostDate }}</time>
+</li>
+{% endif %}
+{%- endfor -%}
 </ul>
 
 <p>All posts are available at the <a href="/posts/">archive</a>.</p>
@@ -67,49 +145,47 @@ numberOfLatestPostsToShow: 2
 <h2>Webrings</h2>
 
 <section>
-    <h3>
-        <a href="https://neossg.neocities.org/" style="color:var(--info)">NeoSSG 🌐</a>
-    </h3>
-    <div id="neossg">
-        <script src="https://neossg.neocities.org/onionring-variables.js" async></script>
-        <script src="https://neossg.neocities.org/onionring-widget.js" async></script>
-    </div>
+<h3>
+<a href="https://neossg.neocities.org/" style="color:var(--info)">NeoSSG 🌐</a>
+</h3>
+<div id="neossg">
+<script src="https://neossg.neocities.org/onionring-variables.js" async></script>
+<script src="https://neossg.neocities.org/onionring-widget.js" async></script>
+</div>
 </section>
 <section>
-    <h3>
-        <a href="https://baccyflap.com/noai" style="color:var(--danger)">No AI ⛔</a>
-    </h3>
-    <p>
-        <a href="https://baccyflap.com/noai/?prv&s=rzr"> Previous</a>
-        <a href="https://baccyflap.com/noai/?rnd">Random</a>
-        <a href="https://baccyflap.com/noai/?nxt&s=rzr">Next</a>
-    </p>
+<h3>
+<a href="https://baccyflap.com/noai" style="color:var(--danger)">No AI ⛔</a>
+</h3>
+<p>
+<a href="https://baccyflap.com/noai/?prv&s=rzr"> Previous</a>
+<a href="https://baccyflap.com/noai/?rnd">Random</a>
+<a href="https://baccyflap.com/noai/?nxt&s=rzr">Next</a>
+</p>
 </section>
 <section>
-    <h3>
-        <a href="https://nuthead.neocities.org/ring/" style="color:var(--warning)">null webring 💽</a>
-    </h3>
-    <p style="display:flex;">
-        <script src="https://nuthead.neocities.org/ring/ring.js" ></script>
-    </p>
+<h3>
+<a href="https://nuthead.neocities.org/ring/" style="color:var(--warning)">null webring 💽</a>
+</h3>
+<p style="display:flex;">
+<script src="https://nuthead.neocities.org/ring/ring.js" ></script>
+</p>
 </section>
 
-<h2>Favourite Websites!</h2>
+<h2>Blinky buttons :3</h2>
 
 <details>
-    <summary>Click to load button grid</summary>
-    <p style="display:flex;flex-wrap:wrap;gap:var(--space-xxs);" class="details-content">
-        {% for button in buttons.buttons %}
-            <a href="{{button.url}}" title="{{button.title}}"><img src="/static/buttons/{{button.img}}" alt="{{button.title}} button" style="image-rendering:pixelated;" loading="lazy" width="88px" height="31px"></a>
-        {% endfor %}
-    </p>
+<summary>Click to load button grid</summary>
+<p style="display:flex;flex-wrap:wrap;gap:var(--space-xs);justify-content:center;" class="details-content">
+{% for button in buttons.buttons %}
+<a href="{{button.url}}" title="{{button.title}}"><img src="/static/buttons/{{button.img}}" alt="{{button.title}} button" style="image-rendering:pixelated;" loading="lazy" width="88px" height="31px"></a>
+{% endfor %}
+</p>
 </details>
-
-<p>You can find more in my <a href="/bookmarks">bookmarks</a> page.</p>
 
 <p>You can also link my website if you like my work, just please make sure to save the image you want to use to your own website instead of <a href="https://simple.wikipedia.org/wiki/Hotlinking">hotlinking</a>.</p>
 
 <p style="display:flex;flex-wrap:wrap;gap:var(--space-xxs);">
-    <img src="/static/images/button-animated.gif" alt="ReduxFlakes 'reducc' animated button" style="image-rendering:pixelated;" width="88px" height="31px">
-    <img src="/static/images/button.png" alt="ReduxFlakes 'reducc' static button" style="image-rendering:pixelated;" width="88px" height="31px">
+<img src="/static/images/button-animated.gif" alt="ReduxFlakes 'reducc' animated button" style="image-rendering:pixelated;" width="88px" height="31px">
+<img src="/static/images/button.png" alt="ReduxFlakes 'reducc' static button" style="image-rendering:pixelated;" width="88px" height="31px">
 </p>
