@@ -11,6 +11,7 @@ numberOfLatestPostsToShow: 2
         <p>An <small>(almost)</small> full stack developer from Portugal that works with web, desktop, Android, design, and a bit of networking and sound.</p>
         <nav class="social-links">
             <a href="mailto:reduxflakes@disroot.org" class="btn-fancy">Mail me!</a>
+            <a href="https://reduxflakes.neocities.org" class="btn-icon"><img src="/static/icons/web.svg" alt="Website"></a>
             <a href="https://github.com/reduxflakes" class="btn-icon"><img src="/static/icons/github.svg" alt="GitHub Logo"></a>
             <a href="https://fosstodon.org/@redux" class="btn-icon" rel="me"><img src="/static/icons/mastodon.svg" alt="Mastodon Logo"></a>
             <a href="https://youtube.com/@reduxflakes" class="btn-icon"><img src="/static/icons/youtube.svg" alt="YouTube Logo"></a>
@@ -19,9 +20,6 @@ numberOfLatestPostsToShow: 2
         </nav>
     </section>
 </div>
-
-<p>
-    <b style="color:orange;">Warning</b>: Site still in construction!</p>
 
 <h2>Stack</h2>
 <small>Ordered by experience and knowledge (best to worst)</small>
@@ -44,6 +42,7 @@ numberOfLatestPostsToShow: 2
                 <li>Open Source</li>
                 <li>Pink/Purple</li>
                 <li>Minimalism</li>
+                <li>ThinkPad&#8482;</li>
                 <li>Design</li>
                 <ul>
                     <li>Frutiger Aero</li>
@@ -106,7 +105,7 @@ numberOfLatestPostsToShow: 2
 
 </details>
 
-<h2>Popular projects</h2>
+<h2 id="projects">Popular projects</h2>
 
 <div class="auto-grid">
 
@@ -121,56 +120,29 @@ numberOfLatestPostsToShow: 2
 <a href="https://github.com/surfscape" class="btn-icon"><img src="/static/icons/github.svg" alt="GitHub Icon"></a>
 </span>
 </section>
-
-</div>
-
-{% set postsCount = collections.blog | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-
-<h2>Latest {{ latestPostsCount }} Blog Post{% if latestPostsCount != 1 %}s{% endif %}
-</h2>
-
-<ul>
-{%- for post in collections.blog | reverse -%}
-{% if loop.index0 < numberOfLatestPostsToShow %}
-<li>
-    <a href="{{post.url}}">{{post.data.title}}</a> | <time datetime="{{post.date}}">{{post.date | formatPostDate }}</time>
-</li>
-{% endif %}
-{%- endfor -%}
+<section class="card">
+<h3>Neocities</h3>
+<ul class="card-stack-list">
+<li><img src="/static/icons/eleventy-text.svg" alt="11ty icon">Eleventy</li>
 </ul>
+<p>My personal and main website, full of cool stuff!</p>
+<span style="display:flex;gap:0.5rem;">
+<a href="https://reduxflakes.neocities.org" class="btn">Access</a>
+<a href="https://github.com/reduxflakes/neocities" class="btn-icon"><img src="/static/icons/github.svg" alt="GitHub Icon"></a>
+</span>
+</section>
+<section class="card">
+<h3>csmpjs</h3>
+<ul class="card-stack-list">
+<li><img src="/static/icons/javascript.svg" alt="11ty icon" width="16" height="16">JavaScript</li>
+</ul>
+<p>A customizable, simple, music player in JS </p>
+<span style="display:flex;gap:0.5rem;">
+<a href="https://github.com/ReduxFlakes/csmpjs" class="btn-icon"><img src="/static/icons/github.svg" alt="GitHub Icon"></a>
+</span>
+</section>
 
-<p>All posts are available at the <a href="/posts/">archive</a>.</p>
-
-<h2>Webrings</h2>
-
-<section>
-<h3>
-<a href="https://neossg.neocities.org/" style="color:var(--info)">NeoSSG 🌐</a>
-</h3>
-<div id="neossg">
-<script src="https://neossg.neocities.org/onionring-variables.js" async></script>
-<script src="https://neossg.neocities.org/onionring-widget.js" async></script>
 </div>
-</section>
-<section>
-<h3>
-<a href="https://baccyflap.com/noai" style="color:var(--danger)">No AI ⛔</a>
-</h3>
-<p>
-<a href="https://baccyflap.com/noai/?prv&s=rzr"> Previous</a>
-<a href="https://baccyflap.com/noai/?rnd">Random</a>
-<a href="https://baccyflap.com/noai/?nxt&s=rzr">Next</a>
-</p>
-</section>
-<section>
-<h3>
-<a href="https://nuthead.neocities.org/ring/" style="color:var(--warning)">null webring 💽</a>
-</h3>
-<p style="display:flex;">
-<script src="https://nuthead.neocities.org/ring/ring.js" ></script>
-</p>
-</section>
 
 <h2>Blinky buttons :3</h2>
 

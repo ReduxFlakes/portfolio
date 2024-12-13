@@ -5,7 +5,7 @@
       "link": "https://fosstodon.org/@redux"
     },
     {
-      "name": "GtiHub",
+      "name": "GitHub",
       "link": "https://github.com/ReduxFlakes"
     },
     {
@@ -23,10 +23,6 @@
     {
       "name": "Dribbble",
       "link": "https://dribbble.com/reduxflakes"
-    },
-    {
-      "name": "Feed",
-      "link": "feed.xml"
     }
   ]
 }

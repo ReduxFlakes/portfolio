@@ -2,20 +2,7 @@ export default {
   headernav: [
     {
       title: "Projects",
-      url: "/project/",
-    },
-    {
-      title: "Design",
-      url: "/design/",
-    },
-
-    {
-      title: "Uses",
-      url: "/uses/",
-    },
-    {
-      title: "Archive",
-      url: "/posts/",
+      url: "#projects",
     },
     {
       title: "About",

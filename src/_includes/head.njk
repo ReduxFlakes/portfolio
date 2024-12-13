@@ -26,15 +26,4 @@
     <meta name="generator" content="{{ eleventy.generator }}"/>
     {% css %}{% include "styles/index.css" %}{% endcss %}
     <link rel="stylesheet" href="{% getBundleFileUrl 'css' %}">
-    <style>
-        {% if is_post %}
-            {% getBundle "css", "post" %}
-        {% endif %}
-    </style>
-    {% if style_slot %}
-        {% renderTemplate 'njk,md',
-        slots %}
-        {{ style_slot | safe }}
-        {% endrenderTemplate %}
-    {% endif %}
 </head>

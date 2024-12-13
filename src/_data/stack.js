@@ -17,8 +17,8 @@ export default {
       title: "CSS",
     },
     {
-      icon: "firefox",
-      title: "Firefox",
+      icon: "javascript",
+      title: "JavaScript",
     },
     {
       icon: "figma",
@@ -37,20 +37,12 @@ export default {
       title: "VS Code",
     },
     {
-      icon: "git",
-      title: "Git",
-    },
-    {
       icon: "archlinux",
       title: "Arch Linux",
     },
     {
-      icon: "c-language",
-      title: "C",
-    },
-    {
-      icon: "java",
-      title: "Java",
+      icon: "git",
+      title: "Git",
     },
 
     {
@@ -58,12 +50,22 @@ export default {
       title: "Python",
     },
     {
-      icon: "unity",
-      title: "Unity",
+      icon: "java",
+      title: "Java",
     },
+
     {
       icon: "npm",
       title: "NPM",
+    },
+    {
+      icon: "c-language",
+      title: "C",
+    },
+
+    {
+      icon: "unity",
+      title: "Unity",
     },
   ],
 };
